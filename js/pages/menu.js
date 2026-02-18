@@ -270,7 +270,18 @@ function getFilteredItems() {
     // Apply tag filters
     if (activeFilters.size > 0) {
         items = items.filter(item =>
-            [...activeFilters].some(filter => item.tags.includes(filter))
+            [...activeFilters].some(filter => {
+                if (filter === 'nonveg') {
+                    // Non-veg items are those without 'veg' tag, excluding beverages/desserts
+                    const isBeverageOrDessert = ['coffee', 'coolers', 'matcha', 'desserts'].includes(item.category);
+                    return !item.tags.includes('veg') && !isBeverageOrDessert;
+                }
+                if (filter === 'sweettooth') {
+                    // Sweet items are desserts and sweet beverages
+                    return ['desserts', 'matcha', 'coolers', 'coffee'].includes(item.category);
+                }
+                return item.tags.includes(filter);
+            })
         );
     }
 
