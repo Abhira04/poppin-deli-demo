@@ -358,7 +358,8 @@ export async function getSpecials() {
     if (SHEET_IDS.specials) {
         try {
             const rows = await fetchSheet('specials');
-            if (rows && rows.length > 0) {
+            // Validate columns to avoid using default sheet data
+            if (rows && rows.length > 0 && rows[0].menu_item_id) {
                 const specials = rows.filter(r => r.active === 'TRUE');
                 setCachedData(CACHE_KEYS.specials, specials);
                 return specials;
@@ -392,7 +393,8 @@ export async function getReviews() {
     if (SHEET_IDS.reviews) {
         try {
             const rows = await fetchSheet('reviews');
-            if (rows && rows.length > 0) {
+            // Validate columns
+            if (rows && rows.length > 0 && (rows[0].text || rows[0].name)) {
                 setCachedData(CACHE_KEYS.reviews, rows);
                 return rows;
             }
@@ -424,7 +426,8 @@ export async function getNowBrewing() {
     if (SHEET_IDS.now_brewing) {
         try {
             const rows = await fetchSheet('now_brewing');
-            if (rows && rows.length > 0) {
+            // Validate columns
+            if (rows && rows.length > 0 && rows[0].menu_item_id) {
                 const active = rows.find(r => r.active === 'TRUE');
                 if (active) {
                     setCachedData(CACHE_KEYS.now_brewing, active);
@@ -463,7 +466,8 @@ export async function getPillars() {
     if (SHEET_IDS.pillars) {
         try {
             const rows = await fetchSheet('pillars');
-            if (rows && rows.length > 0) {
+            // Validate columns
+            if (rows && rows.length > 0 && (rows[0].title || rows[0].icon)) {
                 setCachedData(CACHE_KEYS.pillars, rows);
                 return rows;
             }
