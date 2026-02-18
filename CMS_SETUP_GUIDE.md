@@ -125,13 +125,43 @@ If something breaks, check:
 
 ---
 
-## 📊 Optional: Add More Sheets
+## 🌟 Featured Sections Setup
 
-You can also create these tabs for more control:
+To make the "Today's Special" and "Poppin' Specials" work dynamically, create these two new sheets (tabs).
 
-- `menu` — Update menu items and prices
-- `featured` — Choose homepage featured items
-- `gallery` — Update cafe photos
-- `site` — Update phone, address, hours
+### Step 1: Create `now_brewing` Sheet (Tab)
+1. Add a new tab named: `now_brewing`
+2. **Copy & Paste** this exact data (including headers):
 
-Ask your developer to set these up when ready!
+| menu_item_id | label | active |
+|---|---|---|
+| saigon-coconut-latte | Today Only | TRUE |
+| vanilla-cold-brew | 50% Off | FALSE |
+
+*   **menu_item_id**: Must match the ID from your menu (e.g., `saigon-coconut-latte`).
+*   **active**: Only set **ONE** row to `TRUE`.
+
+---
+
+### Step 2: Create `specials` Sheet (Tab)
+1. Add a new tab named: `specials`
+2. **Copy & Paste** this exact data:
+
+| menu_item_id | tag | active |
+|---|---|---|
+| grilled-chicken-hummus | Must Try | TRUE |
+| chicken-makhani-biryani | Chef's Kiss | TRUE |
+| firecracker-burger-nv | Spicy Hit | TRUE |
+| loaded-burger | Limited | FALSE |
+
+*   **tag**: The little badge text (e.g., "Must Try").
+*   **active**: Set to `TRUE` for items you want to show (max 3 recommended).
+
+---
+
+### Step 3: Connect to Website
+1. Get the **Sheet ID** for these new sheets (it's the same ID if they are tabs in the same spreadsheet).
+2. If you created a **NEW spreadsheet**, you need to add its ID to `js/lib/googleSheets.js`.
+3. If you added tabs to the **existing spreadsheet**, the ID is already there! You just need to make sure the tab names are exactly `now_brewing` and `specials`.
+
+**Note:** If you are using a **separate spreadsheet** for these, let your developer know the new ID.

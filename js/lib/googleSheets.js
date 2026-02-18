@@ -15,10 +15,10 @@ const SHEET_IDS = {
     menu: '1V_SXJbiDPdXy5mXewtCEkeWAnCVg6M9lnBEVMaTfhyQ',
     featured: '101WGAAUvBX3UJzW86Rtu7GJGnfweiXEs7gBm9dpxJl4',
     site: '1Wx8Dzeybc6ndakYJoyMd_a6rBgUgzyb82OVnGR8Yh0w',
-    specials: '', // TODO: Add sheet ID for Signature Picks
-    reviews: '',  // TODO: Add sheet ID for Google Reviews
-    now_brewing: '', // TODO: Add sheet ID for Today's Special
-    pillars: ''  // TODO: Add sheet ID for Brand Pillars
+    specials: '1OIGx_iPzHohQ0lcOeNdC0czcZiMQYrCK77sqTgXYBgg', // Same as status
+    reviews: '1OIGx_iPzHohQ0lcOeNdC0czcZiMQYrCK77sqTgXYBgg',  // Same as status
+    now_brewing: '1OIGx_iPzHohQ0lcOeNdC0czcZiMQYrCK77sqTgXYBgg', // Same as status
+    pillars: '1OIGx_iPzHohQ0lcOeNdC0czcZiMQYrCK77sqTgXYBgg'  // Same as status
 };
 
 // Cache duration in milliseconds (1 minute for faster updates)

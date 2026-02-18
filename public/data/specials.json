@@ -1,20 +1,20 @@
 [
     {
         "id": 1,
-        "menu_item_id": 305,
-        "tag": "Limited",
+        "menu_item_id": "grilled-chicken-hummus",
+        "tag": "Must Try",
         "active": true
     },
     {
         "id": 2,
-        "menu_item_id": 1503,
-        "tag": "Special",
+        "menu_item_id": "chicken-makhani-biryani",
+        "tag": "Chef's Kiss",
         "active": true
     },
     {
         "id": 3,
-        "menu_item_id": 1103,
-        "tag": "Weekly Pick",
+        "menu_item_id": "firecracker-burger-nv",
+        "tag": "Spicy Hit",
         "active": true
     }
 ]
