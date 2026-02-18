@@ -228,7 +228,7 @@ export async function getMenu() {
                 price: parseFloat(row.price) || 0,
                 isVeg: row.isVeg === 'TRUE' || row.isVeg === true,
                 tags: row.tags ? row.tags.split(',').map(t => t.trim()) : [],
-                image: row.imageUrl || null,
+                imageUrl: row.imageUrl || null,
                 sortOrder: parseInt(row.sortOrder) || 999
             }))
             .sort((a, b) => a.sortOrder - b.sortOrder);
@@ -239,7 +239,8 @@ export async function getMenu() {
         const result = {
             categories: categories.map(cat => ({
                 id: cat.toLowerCase().replace(/\s+/g, '-'),
-                name: cat
+                name: cat,
+                description: ''
             })),
             items
         };
