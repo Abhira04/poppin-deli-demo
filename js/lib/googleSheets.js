@@ -54,7 +54,7 @@ async function fetchSheet(sheetType) {
     }
 
     // For separate sheets, use Sheet1 as the default tab name
-    const url = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?tqx=out:json`;
+    const url = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?tqx=out:json&sheet=${sheetType}`;
 
     try {
         const response = await fetch(url);

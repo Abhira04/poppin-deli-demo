@@ -164,4 +164,21 @@ To make the "Today's Special" and "Poppin' Specials" work dynamically, create th
 2. If you created a **NEW spreadsheet**, you need to add its ID to `js/lib/googleSheets.js`.
 3. If you added tabs to the **existing spreadsheet**, the ID is already there! You just need to make sure the tab names are exactly `now_brewing` and `specials`.
 
-**Note:** If you are using a **separate spreadsheet** for these, let your developer know the new ID.
+### Step 4: Add `pillars` Sheet (Optional)
+To customize the "Fresh Ingredients" section:
+1. Tab name: `pillars`
+2. Data:
+| icon | title | description |
+|---|---|---|
+| 🌿 | Fresh Ingredients | Farm-to-table produce... |
+| ☕ | Cozy Vibe | Your happy place... |
+
+### Step 5: Add `reviews` Sheet (Optional)
+To update customer reviews:
+1. Tab name: `reviews`
+2. Data:
+| name | rating | text | date |
+|---|---|---|---|
+| Rahul S. | 5 | Amazing coffee! | 2024-12 |
+
+**Note:** If you don't add these tabs, the website will just show the default content.
