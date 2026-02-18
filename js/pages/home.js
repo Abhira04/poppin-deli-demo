@@ -5,13 +5,13 @@
 import { initHeader } from '../components/header.js';
 import { initMobileNav } from '../components/mobile-nav.js';
 import {
+    getStatus,
+    getMenu,
     initScrollReveal,
     getWhatsAppLink,
     GOOGLE_MAPS_URL
 } from '../utils.js';
 import {
-    getStatus,
-    getMenu,
     getSpecials,
     getReviews,
     getNowBrewing,
@@ -24,15 +24,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     initHeader();
     initMobileNav();
     initHeroAnimation();
-
-    // Each init function wrapped in try-catch to prevent cascading failures
-    try { await initLiveStatus(); } catch (e) { console.error('initLiveStatus failed:', e); }
-    try { await initFeaturedItems(); } catch (e) { console.error('initFeaturedItems failed:', e); }
-    try { await initLoyaltyBanner(); } catch (e) { console.error('initLoyaltyBanner failed:', e); }
-    try { await initNowBrewing(); } catch (e) { console.error('initNowBrewing failed:', e); }
-    try { await initSpecials(); } catch (e) { console.error('initSpecials failed:', e); }
-    try { await initPillars(); } catch (e) { console.error('initPillars failed:', e); }
-    try { await initReviewsFromSheet(); } catch (e) { console.error('initReviewsFromSheet failed:', e); }
+    await initLiveStatus();
+    await initFeaturedItems();
+    await initLoyaltyBanner();
+    await initNowBrewing();
+    await initSpecials();
+    await initPillars();
+    await initReviewsFromSheet();
     initScrollReveal();
 });
 

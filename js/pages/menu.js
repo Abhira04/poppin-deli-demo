@@ -5,10 +5,10 @@
 import { initHeader } from '../components/header.js';
 import { initMobileNav } from '../components/mobile-nav.js';
 import {
+    getMenu,
     debounce,
     initScrollReveal
 } from '../utils.js';
-import { getMenu } from '../lib/googleSheets.js';
 import {
     addToCart,
     removeFromCart,
