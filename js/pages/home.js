@@ -5,13 +5,13 @@
 import { initHeader } from '../components/header.js';
 import { initMobileNav } from '../components/mobile-nav.js';
 import {
-    getStatus,
     getMenu,
     initScrollReveal,
     getWhatsAppLink,
     GOOGLE_MAPS_URL
 } from '../utils.js';
 import {
+    getStatus,
     getSpecials,
     getReviews,
     getNowBrewing,
@@ -55,32 +55,25 @@ function initHeroAnimation() {
 }
 
 /**
- * Initialize live status indicator
+ * Initialize live status indicator from Google Sheets
  */
 async function initLiveStatus() {
-    const statusContainer = document.querySelector('.live-status-badge');
-    if (!statusContainer) return;
+    const heroBadge = document.querySelector('.hero-badge');
+    if (!heroBadge) return;
 
     const status = await getStatus();
     if (!status) return;
 
-    const statusColors = {
-        green: { color: 'green', icon: '🟢' },
-        yellow: { color: 'yellow', icon: '🟡' },
-        red: { color: 'red', icon: '🔴' }
-    };
+    // Update the status dot color
+    const statusDot = heroBadge.querySelector('.status-dot');
+    if (statusDot) {
+        statusDot.className = 'status-dot ' + (status.status || 'green');
+    }
 
-    const currentStatus = statusColors[status.status] || statusColors.green;
-
-    statusContainer.innerHTML = `
-    <span class="status-dot ${currentStatus.color}"></span>
-    <span>${status.label}</span>
-  `;
-
-    // Update suggestion if available
-    const suggestionEl = document.querySelector('.live-status-suggestion');
-    if (suggestionEl && status.suggestion) {
-        suggestionEl.textContent = status.suggestion;
+    // Update the label text next to the dot
+    const labelSpan = heroBadge.querySelectorAll('span')[1];
+    if (labelSpan) {
+        labelSpan.textContent = status.label || 'Open • 11 AM – 11 PM';
     }
 }
 
