@@ -464,71 +464,7 @@
       </svg><span>Book</span></a>
   </nav>
 
-  <script>
-    // Reveal animations on scroll - works without modules
-    document.addEventListener('DOMContentLoaded', function () {
-      const revealElements = document.querySelectorAll('.reveal');
-      const observer = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry, index) {
-          if (entry.isIntersecting) {
-            setTimeout(function () {
-              entry.target.classList.add('visible');
-            }, index * 100);
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
-      revealElements.forEach(function (el) { observer.observe(el); });
-
-      // Try to load live status (works only on server)
-      loadLiveStatus();
-    });
-
-    async function loadLiveStatus() {
-      try {
-        // Try to fetch status from server
-        const response = await fetch('/data/status.json');
-        if (!response.ok) throw new Error('Not on server');
-        const status = await response.json();
-        updateStatusUI(status);
-      } catch (error) {
-        // Use default values when opened via file:// or fetch fails
-        console.log('Using default status (file:// protocol or fetch failed)');
-        updateStatusUI({ status: 'green', label: 'Poppin\' Right Now', note: 'Walk-ins welcome' });
-      }
-    }
-
-    function updateStatusUI(status) {
-      // Update hero badge dot
-      const heroBadgeDot = document.querySelector('.hero-badge .status-dot');
-      if (heroBadgeDot) {
-        heroBadgeDot.className = 'status-dot ' + (status.status || 'green');
-      }
-
-      // Update status bar (premium design)
-      const statusPulse = document.querySelector('.status-pulse');
-      const statusLabel = document.querySelector('.status-bar-label');
-      const specialText = document.querySelector('.status-bar-special-text');
-
-      if (statusPulse) {
-        statusPulse.className = 'status-pulse ' + (status.status || 'green');
-      }
-
-      if (statusLabel) {
-        statusLabel.textContent = status.label || 'Open Now';
-        var colors = { green: '#22c55e', yellow: '#eab308', red: '#ef4444' };
-        statusLabel.style.color = colors[status.status] || colors.green;
-      }
-
-      if (specialText) {
-        if (status.waitTime && status.waitTime > 0) {
-          specialText.textContent = status.waitTime + ' min wait';
-        } else {
-          specialText.textContent = status.note || 'Walk-ins welcome';
-        }
-      }
-    }
-  </script>
+  <script type="module" src="/js/pages/home.js"></script>
 </body>
 
 </html>
