@@ -413,3 +413,72 @@
     color: var(--color-text-light);
     margin-bottom: var(--space-4);
 }
+
+/* ===== Mobile Compact Cards ===== */
+@media (max-width: 600px) {
+    .menu-items-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-3);
+    }
+
+    .menu-item-card {
+        display: flex;
+        flex-direction: row;
+        border-radius: var(--radius-md);
+    }
+
+    .menu-item-image {
+        width: 100px;
+        min-width: 100px;
+        aspect-ratio: 1/1;
+        border-radius: var(--radius-md) 0 0 var(--radius-md);
+    }
+
+    .menu-item-tags {
+        top: var(--space-1);
+        left: var(--space-1);
+    }
+
+    .menu-item-tag {
+        font-size: 8px;
+        padding: 1px var(--space-1);
+    }
+
+    .menu-item-body {
+        padding: var(--space-2) var(--space-3);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-width: 0;
+        flex: 1;
+    }
+
+    .menu-item-name {
+        font-size: var(--text-sm);
+        margin-bottom: 2px;
+    }
+
+    .menu-item-description {
+        font-size: 12px;
+        margin-bottom: var(--space-2);
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .menu-item-price {
+        font-size: var(--text-base);
+    }
+
+    .add-to-cart-btn {
+        padding: var(--space-1) var(--space-2);
+        font-size: 12px;
+    }
+
+    .add-to-cart-btn svg {
+        width: 12px;
+        height: 12px;
+    }
+}
