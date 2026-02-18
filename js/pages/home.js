@@ -5,13 +5,13 @@
 import { initHeader } from '../components/header.js';
 import { initMobileNav } from '../components/mobile-nav.js';
 import {
-    getStatus,
-    getMenu,
     initScrollReveal,
     getWhatsAppLink,
     GOOGLE_MAPS_URL
 } from '../utils.js';
 import {
+    getStatus,
+    getMenu,
     getSpecials,
     getReviews,
     getNowBrewing,
