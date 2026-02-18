@@ -58,22 +58,42 @@ function initHeroAnimation() {
  * Initialize live status indicator from Google Sheets
  */
 async function initLiveStatus() {
-    const heroBadge = document.querySelector('.hero-badge');
-    if (!heroBadge) return;
-
     const status = await getStatus();
     if (!status) return;
 
-    // Update the status dot color
-    const statusDot = heroBadge.querySelector('.status-dot');
-    if (statusDot) {
-        statusDot.className = 'status-dot ' + (status.status || 'green');
+    // --- Hero Badge ---
+    const heroBadge = document.querySelector('.hero-badge');
+    if (heroBadge) {
+        const statusDot = heroBadge.querySelector('.status-dot');
+        if (statusDot) {
+            statusDot.className = 'status-dot ' + (status.status || 'green');
+        }
+        const labelSpan = heroBadge.querySelectorAll('span')[1];
+        if (labelSpan) {
+            labelSpan.textContent = status.label || 'Open • 11 AM – 11 PM';
+        }
     }
 
-    // Update the label text next to the dot
-    const labelSpan = heroBadge.querySelectorAll('span')[1];
-    if (labelSpan) {
-        labelSpan.textContent = status.label || 'Open • 11 AM – 11 PM';
+    // --- Status Bar Section ---
+    const statusPulse = document.querySelector('.status-pulse');
+    if (statusPulse) {
+        statusPulse.className = 'status-pulse ' + (status.status || 'green');
+    }
+
+    const statusLabel = document.querySelector('.status-bar-label');
+    if (statusLabel) {
+        statusLabel.textContent = status.label || 'Open Now';
+        const colors = { green: '#22c55e', yellow: '#eab308', red: '#ef4444' };
+        statusLabel.style.color = colors[status.status] || colors.green;
+    }
+
+    const specialText = document.querySelector('.status-bar-special-text');
+    if (specialText) {
+        if (status.waitTime && status.waitTime > 0) {
+            specialText.textContent = status.waitTime + ' min wait';
+        } else {
+            specialText.textContent = status.note || 'Walk-ins welcome';
+        }
     }
 }
 
