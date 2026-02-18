@@ -1,0 +1,1695 @@
+{
+    "categories": [
+        {
+            "id": "food",
+            "name": "Food",
+            "description": "Asian-inspired appetizers and snacks"
+        },
+        {
+            "id": "pastas",
+            "name": "Pastas",
+            "description": "Italian-style pasta dishes"
+        },
+        {
+            "id": "burgers",
+            "name": "Burgers",
+            "description": "Gourmet burgers with creative toppings"
+        },
+        {
+            "id": "sandwiches",
+            "name": "Sandwiches",
+            "description": "Stuffed sandwiches and hoagies"
+        },
+        {
+            "id": "tapas",
+            "name": "Tapas & Sliders",
+            "description": "Small plates and mini burgers"
+        },
+        {
+            "id": "pizza",
+            "name": "Pizza",
+            "description": "Hand-tossed pizzas with premium toppings"
+        },
+        {
+            "id": "mexican",
+            "name": "Mexican",
+            "description": "Burritos, tacos, and bowls"
+        },
+        {
+            "id": "indian",
+            "name": "Indian Mains",
+            "description": "Authentic Indian curries and rice bowls"
+        },
+        {
+            "id": "continental",
+            "name": "Continental",
+            "description": "Grilled mains and rice bowls"
+        },
+        {
+            "id": "biryani",
+            "name": "Biryani",
+            "description": "Fragrant layered rice dishes"
+        },
+        {
+            "id": "coffee",
+            "name": "Coffee & Cold Brews",
+            "description": "Specialty coffees and cold beverages"
+        },
+        {
+            "id": "coolers",
+            "name": "Coolers & Tea",
+            "description": "Refreshing drinks and iced teas"
+        },
+        {
+            "id": "matcha",
+            "name": "Matcha",
+            "description": "Matcha-based specialty drinks"
+        },
+        {
+            "id": "breakfast",
+            "name": "All Day Breakfast",
+            "description": "Smoothie bowls, salads, and comfort food"
+        },
+        {
+            "id": "desserts",
+            "name": "Desserts",
+            "description": "Sweet treats and pastries"
+        }
+    ],
+    "items": [
+        {
+            "id": "sweet-potato-fries",
+            "imageUrl": "/assets/menu/items/sweet-potato-fries.jpg",
+            "name": "Sweet Potato Fries",
+            "price": 290,
+            "category": "food",
+            "description": "Crispy, golden sweet potato fries with a hint of natural sweetness.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "korean-corn-dog",
+            "imageUrl": "/assets/menu/items/korean-corn-dog.jpg",
+            "name": "Korean Corn Dog",
+            "price": 360,
+            "category": "food",
+            "description": "A crunchy, cheesy corn dog with bold Korean street-style flair.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "japanese-sesame-chicken",
+            "imageUrl": "/assets/menu/items/japanese-sesame-chicken.jpg",
+            "name": "Japanese Sesame Chicken",
+            "price": 400,
+            "category": "food",
+            "description": "Crispy chicken tossed in a sweet-savory sesame glaze.",
+            "tags": []
+        },
+        {
+            "id": "veg-miso-ramen",
+            "imageUrl": "/assets/menu/items/veg-miso-ramen.jpg",
+            "name": "Veg Miso Ramen",
+            "price": 450,
+            "category": "food",
+            "description": "A hearty bowl of veggies in a rich, umami miso broth.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "chicken-miso-ramen",
+            "imageUrl": "/assets/menu/items/chicken-miso-ramen.jpg",
+            "name": "Chicken Miso Ramen",
+            "price": 485,
+            "category": "food",
+            "description": "Tender chicken served in a deep, comforting miso broth.",
+            "tags": []
+        },
+        {
+            "id": "veg-korean-ramen",
+            "imageUrl": "/assets/menu/items/veg-korean-ramen.jpg",
+            "name": "Veg Korean Ramen",
+            "price": 450,
+            "category": "food",
+            "description": "Spicy Korean-style ramen loaded with vegetables.",
+            "tags": [
+                "veg",
+                "spicy"
+            ]
+        },
+        {
+            "id": "chicken-korean-ramen",
+            "imageUrl": "/assets/menu/items/chicken-korean-ramen.jpg",
+            "name": "Chicken Korean Ramen",
+            "price": 485,
+            "category": "food",
+            "description": "Fiery Korean ramen with juicy chicken and bold flavors.",
+            "tags": [
+                "spicy"
+            ]
+        },
+        {
+            "id": "pesto-spaghetti",
+            "imageUrl": "/assets/menu/items/pesto-spaghetti.jpg",
+            "name": "Pesto Spaghetti",
+            "price": 410,
+            "category": "pastas",
+            "description": "Spaghetti tossed in a vibrant basil pesto sauce, topped with parmesan and toasted pine nuts.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "pasta-combo",
+            "imageUrl": "/assets/menu/items/pasta-combo.jpg",
+            "name": "Pasta Combo",
+            "price": 325,
+            "category": "pastas",
+            "description": "Pick 1 Pasta, 1 Beverage and a Dessert of your choice.",
+            "tags": [
+                "veg",
+                "bestseller"
+            ]
+        },
+        {
+            "id": "alfredo-pasta",
+            "imageUrl": "/assets/menu/items/alfredo-pasta.jpg",
+            "name": "Alfredo Pasta",
+            "price": 410,
+            "category": "pastas",
+            "description": "Creamy Alfredo sauce tossed with pasta.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "cajun-alfredo-spaghetti",
+            "imageUrl": "/assets/menu/items/cajun-alfredo-spaghetti.jpg",
+            "name": "Cajun Alfredo Spaghetti",
+            "price": 430,
+            "category": "pastas",
+            "description": "Spaghetti in a creamy Cajun sauce with tomatoes and cream.",
+            "tags": [
+                "veg",
+                "spicy"
+            ]
+        },
+        {
+            "id": "aglio-olio-spaghetti",
+            "imageUrl": "/assets/menu/items/aglio-olio-spaghetti.jpg",
+            "name": "Aglio O Olio Spaghetti",
+            "price": 410,
+            "category": "pastas",
+            "description": "Simple yet flavorful pasta with garlic, olive oil, and red pepper flakes.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "arrabiata-penne",
+            "imageUrl": "/assets/menu/items/arrabiata-penne.jpg",
+            "name": "Arrabiata Penne",
+            "price": 430,
+            "category": "pastas",
+            "description": "Spicy tomato-based pasta with garlic, chili, and fresh herbs.",
+            "tags": [
+                "veg",
+                "spicy"
+            ]
+        },
+        {
+            "id": "firecracker-burger-nv",
+            "imageUrl": "/assets/menu/items/firecracker-burger-nv.jpg",
+            "name": "Firecracker Burger (Non Veg)",
+            "price": 480,
+            "category": "burgers",
+            "description": "Spicy burger with chicken patty, jalapenos, spicy mayo, and crisp lettuce.",
+            "tags": [
+                "spicy",
+                "bestseller"
+            ]
+        },
+        {
+            "id": "seekh-kebab-burger",
+            "imageUrl": "/assets/menu/items/seekh-kebab-burger.jpg",
+            "name": "Seekh Kebab Burger",
+            "price": 485,
+            "category": "burgers",
+            "description": "Smoky, spiced seekh kebab in a bun with chutney and slaw.",
+            "tags": [
+                "staffpick"
+            ]
+        },
+        {
+            "id": "big-papi-burger",
+            "imageUrl": "/assets/menu/items/big-papi-burger.jpg",
+            "name": "Big Papi Burger",
+            "price": 480,
+            "category": "burgers",
+            "description": "Crispy chicken burger with smoky chipotle sauce and fresh lettuce.",
+            "tags": []
+        },
+        {
+            "id": "firecracker-burger-veg",
+            "imageUrl": "/assets/menu/items/firecracker-burger-veg.jpg",
+            "name": "Firecracker Burger (Veg)",
+            "price": 410,
+            "category": "burgers",
+            "description": "Veggie patty with fresh lettuce and fiery house sauce.",
+            "tags": [
+                "veg",
+                "spicy"
+            ]
+        },
+        {
+            "id": "smash-lamb-burger",
+            "imageUrl": "/assets/menu/items/smash-lamb-burger.jpg",
+            "name": "Smash Lamb Burger",
+            "price": 670,
+            "category": "burgers",
+            "description": "Juicy smashed lamb double patty with cheese, caramelised onion, and animal sauce.",
+            "tags": [
+                "bestseller"
+            ]
+        },
+        {
+            "id": "bbq-mushroom-burger",
+            "imageUrl": "/assets/menu/items/bbq-mushroom-burger.jpg",
+            "name": "BBQ Mushroom Burger",
+            "price": 430,
+            "category": "burgers",
+            "description": "Crunchy BBQ mushrooms with lettuce, cheese and house sauce.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "cajun-paneer-burger",
+            "imageUrl": "/assets/menu/items/cajun-paneer-burger.jpg",
+            "name": "Cajun Fried Paneer Burger",
+            "price": 445,
+            "category": "burgers",
+            "description": "Crispy Cajun-spiced paneer with creamy mayo and tangy pickles.",
+            "tags": [
+                "veg",
+                "spicy"
+            ]
+        },
+        {
+            "id": "classic-blt",
+            "imageUrl": "/assets/menu/items/classic-blt.jpg",
+            "name": "Classic BLT Sandwich",
+            "price": 520,
+            "category": "sandwiches",
+            "description": "Crispy bacon, fresh lettuce, juicy tomato, and creamy mayo on French loaf.",
+            "tags": [
+                "bestseller"
+            ]
+        },
+        {
+            "id": "mumbai-masala",
+            "imageUrl": "/assets/menu/items/mumbai-masala.jpg",
+            "name": "Mumbai Masala Sandwich",
+            "price": 320,
+            "category": "sandwiches",
+            "description": "Spiced potato, beetroot & cheese with chutney, toasted between buttered bread.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "philly-cheese",
+            "imageUrl": "/assets/menu/items/philly-cheese.jpg",
+            "name": "Philly Cheese Sandwich",
+            "price": 350,
+            "category": "sandwiches",
+            "description": "Sauteed mushrooms, melted cheese, caramelized onions, and bell peppers.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "pulled-lamb",
+            "imageUrl": "/assets/menu/items/pulled-lamb.jpg",
+            "name": "Pulled Lamb Sandwich",
+            "price": 437,
+            "category": "sandwiches",
+            "description": "Slow-cooked lamb, caramelised onions, and cheese.",
+            "tags": [
+                "staffpick"
+            ]
+        },
+        {
+            "id": "chicken-pesto-sandwich",
+            "imageUrl": "/assets/menu/items/chicken-pesto-sandwich.jpg",
+            "name": "Chicken Pesto Sandwich",
+            "price": 385,
+            "category": "sandwiches",
+            "description": "Fresh basil pesto paired with grilled chicken.",
+            "tags": []
+        },
+        {
+            "id": "paneer-pesto-sandwich",
+            "imageUrl": "/assets/menu/items/paneer-pesto-sandwich.jpg",
+            "name": "Paneer Pesto Sandwich",
+            "price": 360,
+            "category": "sandwiches",
+            "description": "Fresh basil pesto paired with grilled paneer.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "chicken-tikka-sandwich",
+            "imageUrl": "/assets/menu/items/chicken-tikka-sandwich.jpg",
+            "name": "Chicken Tikka Sandwich",
+            "price": 375,
+            "category": "sandwiches",
+            "description": "Smoky tikka stuffed between toasted bread with mint chutney.",
+            "tags": []
+        },
+        {
+            "id": "paneer-tikka-sandwich",
+            "imageUrl": "/assets/menu/items/paneer-tikka-sandwich.jpg",
+            "name": "Paneer Tikka Sandwich",
+            "price": 350,
+            "category": "sandwiches",
+            "description": "Smoky tikka stuffed between toasted bread with mint chutney.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "smoked-chicken-hummus",
+            "imageUrl": "/assets/menu/items/smoked-chicken-hummus.jpg",
+            "name": "Smoked Chicken Hummus Board",
+            "price": 285,
+            "category": "tapas",
+            "description": "Creamy hummus with pita, fresh veggies and smoked chicken.",
+            "tags": []
+        },
+        {
+            "id": "falafel-hummus",
+            "imageUrl": "/assets/menu/items/falafel-hummus.jpg",
+            "name": "Falafel Hummus Board",
+            "price": 250,
+            "category": "tapas",
+            "description": "Creamy hummus with pita, fresh veggies and falafel.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "chicken-kathi",
+            "imageUrl": "/assets/menu/items/chicken-kathi-roll.jpg",
+            "name": "Chicken Kathi Roll",
+            "price": 280,
+            "category": "tapas",
+            "description": "Succulent chicken chunks, sauteed onions, and masalas rolled in paratha.",
+            "tags": []
+        },
+        {
+            "id": "malai-broccoli",
+            "imageUrl": "/assets/menu/items/malai-broccoli.jpg",
+            "name": "Malai Broccoli",
+            "price": 250,
+            "category": "tapas",
+            "description": "Char-grilled broccoli coated in creamy malai and spices.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "avocado-bhel",
+            "imageUrl": "/assets/menu/items/avocado-bhel.jpg",
+            "name": "Avocado Bhel",
+            "price": 290,
+            "category": "tapas",
+            "description": "Puffed rice, tangy chutneys, and fresh guacamole.",
+            "tags": [
+                "veg",
+                "staffpick"
+            ]
+        },
+        {
+            "id": "paneer-kathi",
+            "imageUrl": "/assets/menu/items/paneer-kathi-roll.jpg",
+            "name": "Paneer Kathi Roll",
+            "price": 260,
+            "category": "tapas",
+            "description": "Tawa-seared paneer tikka wrapped in a flaky paratha.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "pita-chips",
+            "imageUrl": "/assets/menu/items/pita-chips-dips.jpg",
+            "name": "Pita Chips & Dips",
+            "price": 210,
+            "category": "tapas",
+            "description": "Toasted pita crisps with hummus, chipotle, salsa, and sour cream.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "mexican-bean-slider",
+            "imageUrl": "/assets/menu/items/mexican-bean-slider.jpg",
+            "name": "Mexican Bean Slider",
+            "price": 270,
+            "category": "tapas",
+            "description": "Mini bun with spiced Mexican beans, salsa, and cheese.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "dabheli-slider",
+            "name": "Dabheli Sliders",
+            "price": 190,
+            "category": "tapas",
+            "description": "Mini Gujarati-style spicy potato burgers with chutneys and sev.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "chicken-chapli-slider",
+            "name": "Chicken Chapli Sliders",
+            "price": 280,
+            "category": "tapas",
+            "description": "Juicy chicken chapli patties with creamy mint mayo.",
+            "tags": []
+        },
+        {
+            "id": "vada-pav-slider",
+            "name": "Vada Pav Sliders",
+            "price": 250,
+            "category": "tapas",
+            "description": "Mini batata vadas in buttery pav with spicy chutney.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "cheese-vada-pav",
+            "name": "Cheese Vada Pav Sliders",
+            "price": 270,
+            "category": "tapas",
+            "description": "Classic vada pav with a molten cheese twist.",
+            "tags": [
+                "veg",
+                "bestseller"
+            ]
+        },
+        {
+            "id": "korean-bbq-chicken",
+            "name": "Korean BBQ Chicken",
+            "price": 390,
+            "category": "tapas",
+            "description": "Tender fried chicken in Korean BBQ sauce with sautéed veggies.",
+            "tags": [
+                "bestseller"
+            ]
+        },
+        {
+            "id": "classic-fries",
+            "name": "Classic Salted Fries",
+            "price": 270,
+            "category": "tapas",
+            "description": "Crispy golden fries, lightly salted and served hot.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "korean-bbq-paneer",
+            "name": "Korean BBQ Paneer",
+            "price": 370,
+            "category": "tapas",
+            "description": "Grilled paneer in sweet and savory Korean BBQ sauce.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "cajun-fries",
+            "name": "Cajun Potato Fries",
+            "price": 280,
+            "category": "tapas",
+            "description": "Spicy Cajun-seasoned fries with a hint of heat.",
+            "tags": [
+                "veg",
+                "spicy"
+            ]
+        },
+        {
+            "id": "garlic-honey-chicken",
+            "name": "Garlic Honey Crispy Chicken",
+            "price": 450,
+            "category": "tapas",
+            "description": "Crispy chicken tenders with sweet garlic honey sauce.",
+            "tags": []
+        },
+        {
+            "id": "margherita-pizza",
+            "name": "Classic Margherita Pizza",
+            "price": 460,
+            "category": "pizza",
+            "description": "San Marzano tomato sauce with mozzarella and fresh basil.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "pepperoni-pizza",
+            "name": "Wicked Pepperoni Pizza",
+            "price": 590,
+            "category": "pizza",
+            "description": "Lamb pepperoni, San Marzano sauce, mozzarella blend.",
+            "tags": [
+                "bestseller"
+            ]
+        },
+        {
+            "id": "chicken-tikka-pizza",
+            "name": "Chicken Tikka Pizza",
+            "price": 570,
+            "category": "pizza",
+            "description": "Chicken in desi spices, onion, makhani sauce, mozzarella.",
+            "tags": []
+        },
+        {
+            "id": "mexican-pizza",
+            "name": "Mexican Pizza",
+            "price": 530,
+            "category": "pizza",
+            "description": "Hot sauce, corn, onion, capsicum, jalapeno, mozzarella.",
+            "tags": [
+                "veg",
+                "spicy"
+            ]
+        },
+        {
+            "id": "paneer-tikka-pizza",
+            "name": "Paneer Tikka Pizza",
+            "price": 570,
+            "category": "pizza",
+            "description": "Paneer in Indian spices, onion, capsicum, makhani sauce.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "park-avenue-pizza",
+            "name": "Park Avenue Pizza",
+            "price": 540,
+            "category": "pizza",
+            "description": "Mushroom, bellpepper, broccoli on San Marzano sauce.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "chicken-paprika",
+            "name": "Chicken Paprika Pizza",
+            "price": 540,
+            "category": "pizza",
+            "description": "Hot sauce marinated chicken, red paprika, mozzarella.",
+            "tags": [
+                "spicy"
+            ]
+        },
+        {
+            "id": "sunny-shroom",
+            "name": "Sunny Shroom Pizza",
+            "price": 500,
+            "category": "pizza",
+            "description": "Mushrooms, olives, and cheese on a crisp crust.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "pesto-mushroom-pizza",
+            "name": "Pesto Mushroom Pizza",
+            "price": 535,
+            "category": "pizza",
+            "description": "Basil pesto, mozzarella, and mushrooms.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "loaded-chicken-pizza",
+            "name": "Loaded Chicken Pizza",
+            "price": 595,
+            "category": "pizza",
+            "description": "A meaty chicken lover's dream with extra cheese.",
+            "tags": [
+                "staffpick"
+            ]
+        },
+        {
+            "id": "blt-pizza",
+            "name": "Classic BLT Pizza",
+            "price": 649,
+            "category": "pizza",
+            "description": "A classic BLT reinvented on pizza.",
+            "tags": []
+        },
+        {
+            "id": "pesto-fried-chicken-pizza",
+            "name": "Pesto Fried Chicken Pizza",
+            "price": 560,
+            "category": "pizza",
+            "description": "Golden fried chicken on pesto-smeared cheesy pizza.",
+            "tags": []
+        },
+        {
+            "id": "four-cheese-pizza",
+            "name": "Four Cheese Pizza",
+            "price": 550,
+            "category": "pizza",
+            "description": "A rich medley of four cheeses, gooey and golden.",
+            "tags": [
+                "veg",
+                "bestseller"
+            ]
+        },
+        {
+            "id": "fiery-chicken-pizza",
+            "name": "Fiery Chicken Pizza",
+            "price": 550,
+            "category": "pizza",
+            "description": "Spicy, juicy chicken with a punch of heat.",
+            "tags": [
+                "spicy"
+            ]
+        },
+        {
+            "id": "jerk-chicken-burrito",
+            "name": "Jerk Chicken Burrito",
+            "price": 370,
+            "category": "mexican",
+            "description": "Jamaican jerk chicken, rice, beans, and spices in a warm tortilla.",
+            "tags": []
+        },
+        {
+            "id": "chicken-fajita-burrito",
+            "name": "Chicken Fajita Burrito",
+            "price": 370,
+            "category": "mexican",
+            "description": "Grilled chicken with fajita seasoning, peppers, onions, rice, beans.",
+            "tags": []
+        },
+        {
+            "id": "mushroom-fajita-burrito",
+            "name": "Mushroom Fajita Burrito",
+            "price": 350,
+            "category": "mexican",
+            "description": "Sauteed mushrooms with fajita spices, veggies, and sauces.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "chimichuri-paneer-burrito",
+            "name": "Chimichuri Paneer Burrito",
+            "price": 340,
+            "category": "mexican",
+            "description": "Zesty chimichurri sauce with grilled paneer and fresh veggies.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "mexican-bean-taco",
+            "name": "Mexican Bean Taco",
+            "price": 250,
+            "category": "mexican",
+            "description": "Spiced beans, salsa, and avocado in a soft tortilla.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "chimichurri-cottage-taco",
+            "name": "Chimichurri Cottage Cheese Taco",
+            "price": 320,
+            "category": "mexican",
+            "description": "Grilled cottage cheese with chimichurri sauce and crunchy slaw.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "crispy-southwest-taco",
+            "name": "Crispy Southwest Taco",
+            "price": 400,
+            "category": "mexican",
+            "description": "Crispy chicken with chipotle sauce, lettuce and salsa.",
+            "tags": []
+        },
+        {
+            "id": "chicken-tikka-taco",
+            "name": "Chicken Tikka Taco",
+            "price": 360,
+            "category": "mexican",
+            "description": "Chicken tikka in a soft taco with salad and yogurt sauce.",
+            "tags": []
+        },
+        {
+            "id": "chimichurri-chicken-taco",
+            "name": "Chimichurri Chicken Taco",
+            "price": 360,
+            "category": "mexican",
+            "description": "Chicken with chimichurri sauce, slaw, and chipotle drizzle.",
+            "tags": []
+        },
+        {
+            "id": "quesso-birria-taco",
+            "name": "Quesso Birria Taco",
+            "price": 430,
+            "category": "mexican",
+            "description": "Tender slow-cooked lamb with birria sauce and dipping broth.",
+            "tags": [
+                "staffpick"
+            ]
+        },
+        {
+            "id": "paneer-tikka-taco",
+            "name": "Paneer Tikka Taco",
+            "price": 350,
+            "category": "mexican",
+            "description": "Grilled paneer tikka with pickled onions and mint chutney.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "cajun-paneer-taco",
+            "name": "Cajun Paneer Taco",
+            "price": 390,
+            "category": "mexican",
+            "description": "Spicy Cajun-seasoned paneer with fresh veggies.",
+            "tags": [
+                "veg",
+                "spicy"
+            ]
+        },
+        {
+            "id": "chicken-tikka-bowl",
+            "name": "Chicken Tikka Bowl",
+            "price": 437,
+            "category": "mexican",
+            "description": "Char-grilled chicken tikka on herbed rice with chutneys.",
+            "tags": []
+        },
+        {
+            "id": "cajun-paneer-bowl",
+            "name": "Cajun Paneer Bowl",
+            "price": 350,
+            "category": "mexican",
+            "description": "Cajun-spiced paneer over rice with salsa, sour cream, guacamole.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "paneer-tikka-bowl",
+            "name": "Paneer Tikka Bowl",
+            "price": 420,
+            "category": "mexican",
+            "description": "Char-grilled paneer tikka on herbed rice with chutneys.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "mushroom-fajita-bowl",
+            "name": "Mushroom Fajita Bowl",
+            "price": 437,
+            "category": "mexican",
+            "description": "Fajita-spiced mushrooms on a hearty rice bowl.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "lamb-birria-bowl",
+            "name": "Lamb Birria Bowl",
+            "price": 480,
+            "category": "mexican",
+            "description": "Slow-cooked lamb in birria sauce over rice with salsa and guac.",
+            "tags": [
+                "bestseller"
+            ]
+        },
+        {
+            "id": "chicken-fajita-bowl",
+            "name": "Chicken Fajita Bowl",
+            "price": 430,
+            "category": "mexican",
+            "description": "Grilled chicken in fajita seasoning with veggies and rice.",
+            "tags": []
+        },
+        {
+            "id": "jerk-chicken-bowl",
+            "name": "Jerk Chicken Bowl",
+            "price": 430,
+            "category": "mexican",
+            "description": "Jamaican jerk chicken over rice and beans with guacamole.",
+            "tags": []
+        },
+        {
+            "id": "mexican-bowl-combo",
+            "name": "Mexican Bowl Combo",
+            "price": 365,
+            "category": "mexican",
+            "description": "Pick 1 Mexican Bowl, 1 Beverage and a Dessert.",
+            "tags": [
+                "veg",
+                "bestseller"
+            ]
+        },
+        {
+            "id": "chicken-kadhai",
+            "name": "Chicken Kadhai With Lacha Paratha",
+            "price": 315,
+            "category": "indian",
+            "description": "Bold kadhai-style chicken curry with soft lacha parathas.",
+            "tags": []
+        },
+        {
+            "id": "chole-kulcha",
+            "name": "Chole Masala With Stuffed Kulcha",
+            "price": 295,
+            "category": "indian",
+            "description": "Tangy North Indian chickpeas with soft, stuffed kulchas.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "paneer-kadhai",
+            "name": "Paneer Kadhai With Lacha Paratha",
+            "price": 295,
+            "category": "indian",
+            "description": "Wok-tossed paneer in spicy kadhai masala with flakey paratha.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "indian-meal-combo",
+            "name": "Indian Meal Combo",
+            "price": 350,
+            "category": "indian",
+            "description": "Pick 1 Indian Meal, 1 Beverage and a Dessert.",
+            "tags": [
+                "veg",
+                "bestseller"
+            ]
+        },
+        {
+            "id": "chicken-chettinad",
+            "name": "Chicken Chettinad With Paratha",
+            "price": 305,
+            "category": "indian",
+            "description": "Fiery, peppery Chettinad-style chicken curry with crisp paratha.",
+            "tags": [
+                "spicy"
+            ]
+        },
+        {
+            "id": "paneer-makhani-paratha",
+            "name": "Paneer Makhani & Laccha Paratha",
+            "price": 380,
+            "category": "indian",
+            "description": "Smooth paneer in tomato-based makhani sauce with laccha paratha.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "dal-makhani-paratha",
+            "name": "Dal Makhani & Laccha Paratha",
+            "price": 290,
+            "category": "indian",
+            "description": "Creamy dal makhani with flaky laccha paratha.",
+            "tags": [
+                "veg",
+                "bestseller"
+            ]
+        },
+        {
+            "id": "dum-murgh-rice",
+            "name": "Dum Ka Murgh Rice Bowl",
+            "price": 390,
+            "category": "indian",
+            "description": "Fragrant basmati rice with tender dum-style chicken.",
+            "tags": []
+        },
+        {
+            "id": "veg-korma",
+            "name": "Veg Korma With Paratha",
+            "price": 270,
+            "category": "indian",
+            "description": "Creamy, spiced vegetable curry with flaky paratha.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "dal-makhani-rice",
+            "name": "Dal Makhani Rice Bowl",
+            "price": 330,
+            "category": "indian",
+            "description": "Slow-cooked black lentils in buttery sauce over herb rice.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "chole-rice",
+            "name": "Chole Masala With Herb Rice",
+            "price": 260,
+            "category": "indian",
+            "description": "Zesty chole with aromatic herb-infused rice.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "chicken-makhani-paratha",
+            "name": "Chicken Makhani & Laccha Paratha",
+            "price": 440,
+            "category": "indian",
+            "description": "Classic butter chicken with traditional laccha paratha.",
+            "tags": [
+                "staffpick"
+            ]
+        },
+        {
+            "id": "dum-paneer-rice",
+            "name": "Dum Ka Paneer Rice Bowl",
+            "price": 370,
+            "category": "indian",
+            "description": "Flavorful dum-cooked herb rice with marinated paneer.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "black-pepper-chicken",
+            "name": "Black Pepper Chicken Rice Bowl",
+            "price": 445,
+            "category": "continental",
+            "description": "Juicy chicken meatballs in black pepper gravy with egg rice.",
+            "tags": []
+        },
+        {
+            "id": "grilled-fish",
+            "name": "Grilled Fish With Berry Coulis",
+            "price": 695,
+            "category": "continental",
+            "description": "Grilled Samal fish with sweet-tart berry reduction, mash & veggies.",
+            "tags": [
+                "staffpick"
+            ]
+        },
+        {
+            "id": "black-pepper-veggie",
+            "name": "Black Pepper Veggie Rice Bowl",
+            "price": 405,
+            "category": "continental",
+            "description": "Stir-fried vegetables in black pepper gravy with corn rice.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "grilled-chicken-hummus",
+            "name": "Grilled Chicken On Hummus",
+            "price": 385,
+            "category": "continental",
+            "description": "Spiced grilled chicken on hummus with pita sticks and salad.",
+            "tags": []
+        },
+        {
+            "id": "paneer-roulade",
+            "name": "Paneer Roulade On Hummus",
+            "price": 350,
+            "category": "continental",
+            "description": "Herb-spiced paneer roulade on creamy hummus with pita and salad.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "fiery-chicken-rice",
+            "name": "Fiery Chicken With Corn Rice",
+            "price": 465,
+            "category": "continental",
+            "description": "Bold, spicy stir-fry served with comforting corn rice.",
+            "tags": [
+                "spicy"
+            ]
+        },
+        {
+            "id": "fiery-paneer-rice",
+            "name": "Fiery Paneer With Corn Rice",
+            "price": 445,
+            "category": "continental",
+            "description": "Bold, spicy stir-fry served with comforting corn rice.",
+            "tags": [
+                "veg",
+                "spicy"
+            ]
+        },
+        {
+            "id": "chilli-paprika-chicken",
+            "name": "Chilli Paprika Chicken",
+            "price": 465,
+            "category": "continental",
+            "description": "Tangy paprika sauce with a fiery kick, served with garlic bread.",
+            "tags": [
+                "spicy"
+            ]
+        },
+        {
+            "id": "chilli-paprika-paneer",
+            "name": "Chilli Paprika Paneer",
+            "price": 445,
+            "category": "continental",
+            "description": "Tangy paprika sauce with a fiery kick, served with garlic bread.",
+            "tags": [
+                "veg",
+                "spicy"
+            ]
+        },
+        {
+            "id": "grilled-paneer-steak",
+            "name": "Grilled Paneer Steak",
+            "price": 390,
+            "category": "continental",
+            "description": "Hearty grilled paneer steak with vegetables and red wine sauce.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "grilled-chicken",
+            "name": "Grilled Chicken",
+            "price": 450,
+            "category": "continental",
+            "description": "Tender grilled chicken breast with vegetables and red wine sauce.",
+            "tags": []
+        },
+        {
+            "id": "creamy-cajun-veg",
+            "name": "Creamy Cajun Rice Bowl: Veg",
+            "price": 440,
+            "category": "continental",
+            "description": "Cajun-seasoned paneer with roasted vegetables in creamy gravy.",
+            "tags": [
+                "veg",
+                "spicy"
+            ]
+        },
+        {
+            "id": "creamy-cajun-chicken",
+            "name": "Creamy Cajun Rice Bowl: Chicken",
+            "price": 460,
+            "category": "continental",
+            "description": "Cajun-seasoned chicken in creamy gravy over rice.",
+            "tags": [
+                "spicy"
+            ]
+        },
+        {
+            "id": "chicken-makhani-biryani",
+            "name": "Chicken Makhani Biryani",
+            "price": 365,
+            "category": "biryani",
+            "description": "Butter chicken meets biryani in this rich indulgent dish.",
+            "tags": [
+                "bestseller"
+            ]
+        },
+        {
+            "id": "biryani-combo",
+            "name": "Biryani Combo",
+            "price": 350,
+            "category": "biryani",
+            "description": "Pick 1 Biryani, 1 Beverage and a Dessert.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "paneer-makhani-biryani",
+            "name": "Paneer Makhani Biryani",
+            "price": 340,
+            "category": "biryani",
+            "description": "Creamy makhani-flavored paneer with fragrant biryani rice.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "veg-biryani",
+            "name": "Veg Biryani With Raita",
+            "price": 360,
+            "category": "biryani",
+            "description": "Aromatic basmati rice with mixed vegetables and whole spices.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "chicken-tikka-biryani",
+            "name": "Chicken Tikka Biryani With Raita",
+            "price": 440,
+            "category": "biryani",
+            "description": "Succulent chicken tikka layered with fragrant rice and spices.",
+            "tags": [
+                "staffpick"
+            ]
+        },
+        {
+            "id": "saigon-coconut-latte",
+            "name": "Saigon Coconut Iced Latte",
+            "price": 260,
+            "category": "coffee",
+            "description": "Chilled espresso with coconut and condensed milk.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "iced-long-black",
+            "name": "Iced Long Black",
+            "price": 200,
+            "category": "coffee",
+            "description": "Bold, chilled espresso with zero frills.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "vanilla-cold-brew",
+            "name": "Vanilla Sweet Cream Cold Brew",
+            "price": 260,
+            "category": "coffee",
+            "description": "Smooth cold brew with lush vanilla cream.",
+            "tags": [
+                "veg",
+                "bestseller"
+            ]
+        },
+        {
+            "id": "pineapple-cold-brew",
+            "name": "Pineapple Cold Brew Tonic",
+            "price": 270,
+            "category": "coffee",
+            "description": "Tropical pineapple and fizzy tonic with cold brew.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "shaken-vanilla-latte",
+            "name": "Shaken Vanilla Latte",
+            "price": 280,
+            "category": "coffee",
+            "description": "Creamy vanilla latte shaken with ice.",
+            "tags": [
+                "veg",
+                "staffpick"
+            ]
+        },
+        {
+            "id": "berry-brew",
+            "name": "Berry Brew",
+            "price": 260,
+            "category": "coffee",
+            "description": "Bold espresso with sweet and tart cranberry flavors.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "iced-latte",
+            "name": "Iced Latte",
+            "price": 215,
+            "category": "coffee",
+            "description": "Cold espresso with milk served over ice.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "classic-cold-coffee",
+            "name": "Classic Cold Coffee",
+            "price": 240,
+            "category": "coffee",
+            "description": "Chilled coffee with milk and ice.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "iced-americano",
+            "name": "Iced Americano",
+            "price": 175,
+            "category": "coffee",
+            "description": "Bold espresso with cold water and ice.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "vietnamese-cold-brew",
+            "name": "Vietnamese Cold Brew",
+            "price": 280,
+            "category": "coffee",
+            "description": "Smooth cold brew with sweetened condensed milk.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "pop-espresso",
+            "name": "Pop Espresso",
+            "price": 260,
+            "category": "coffee",
+            "description": "Passionfruit, lemongrass, and bold espresso.",
+            "tags": [
+                "veg",
+                "staffpick"
+            ]
+        },
+        {
+            "id": "sea-salt-caramel-latte",
+            "name": "Sea Salt Caramel Shaken Latte",
+            "price": 280,
+            "category": "coffee",
+            "description": "Shaken iced latte with sweet caramel and sea salt.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "rum-barrel-cold-brew",
+            "name": "Cold Brew (Rum Barrel) - 200 ML",
+            "price": 260,
+            "category": "coffee",
+            "description": "Cold brew aged in rum barrels for a smooth experience.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "iced-flatwhite",
+            "name": "Iced Flatwhite",
+            "price": 220,
+            "category": "coffee",
+            "description": "Smooth iced flat white with micro-foam milk.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "iced-cappuccino",
+            "name": "Iced Cappuccino",
+            "price": 190,
+            "category": "coffee",
+            "description": "Chilled cappuccino with frothy milk over ice.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "guava-chilli",
+            "name": "Guava Chilli",
+            "price": 225,
+            "category": "coolers",
+            "description": "Sweet guava juice with a hint of chili.",
+            "tags": [
+                "veg",
+                "spicy"
+            ]
+        },
+        {
+            "id": "pink-lemonade",
+            "name": "Pink Lemonade",
+            "price": 235,
+            "category": "coolers",
+            "description": "Sweet and tangy pink lemonade with watermelon flavor.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "orange-cranberry",
+            "name": "Orange Cranberry",
+            "price": 270,
+            "category": "coolers",
+            "description": "Fruity orange and cranberry soda over ice.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "passion-pop",
+            "name": "Passion Pop: Passion Fruit Soda",
+            "price": 280,
+            "category": "coolers",
+            "description": "Bubbly soda with passion fruit, lemongrass, and kaffir lime.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "lime-water",
+            "name": "Fresh Lime Water/Soda",
+            "price": 160,
+            "category": "coolers",
+            "description": "Fresh lime juice with sparkling or still water.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "lychee-lemon",
+            "name": "Lychee Lemon Bliss",
+            "price": 200,
+            "category": "coolers",
+            "description": "Lychee and lemon over ice, light and zesty.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "masala-lemonade",
+            "name": "Masala Lemonade",
+            "price": 175,
+            "category": "coolers",
+            "description": "Lemonade infused with Indian spices and herbs.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "hibiscus-iced-tea",
+            "name": "Hibiscus Iced Tea",
+            "price": 190,
+            "category": "coolers",
+            "description": "Vibrant floral iced tea with a slightly tart flavor.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "lemon-iced-tea",
+            "name": "Lemon Iced Tea",
+            "price": 175,
+            "category": "coolers",
+            "description": "Refreshing iced tea with a splash of lemon.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "peach-iced-tea",
+            "name": "Peach Iced Tea",
+            "price": 190,
+            "category": "coolers",
+            "description": "Sweet iced tea made with ripe peaches.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "shaken-vanilla-matcha",
+            "name": "Shaken Vanilla Matcha Latte",
+            "price": 260,
+            "category": "matcha",
+            "description": "Matcha, vanilla, and ice in a cool, creamy shake-up.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "blueberry-matcha",
+            "name": "Blueberry Matcha Latte",
+            "price": 270,
+            "category": "matcha",
+            "description": "Velvety matcha with a splash of blueberry magic.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "iced-matcha-latte",
+            "name": "Iced Matcha Latte",
+            "price": 225,
+            "category": "matcha",
+            "description": "Earthy matcha and cold milk for a green pick-me-up.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "strawberry-matcha",
+            "name": "Strawberry Matcha Latte",
+            "price": 270,
+            "category": "matcha",
+            "description": "Sweet strawberries and bold matcha.",
+            "tags": [
+                "veg",
+                "bestseller"
+            ]
+        },
+        {
+            "id": "seasonal-berry-bowl",
+            "name": "Seasonal Berry Bowl",
+            "price": 430,
+            "category": "breakfast",
+            "description": "Seasonal berries with crunchy granola and honey.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "strawberry-smoothie-bowl",
+            "name": "Strawberry Smoothie Bowl",
+            "price": 430,
+            "category": "breakfast",
+            "description": "Creamy blended strawberries with fresh fruits and granola.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "berry-smoothie",
+            "name": "Berry Smoothie",
+            "price": 310,
+            "category": "breakfast",
+            "description": "Cool and creamy blend of blueberries and yogurt.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "strawberry-smoothie",
+            "name": "Strawberry Smoothie",
+            "price": 310,
+            "category": "breakfast",
+            "description": "Classic strawberry smoothie with ripe strawberries.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "avo-snob",
+            "name": "Avo Snob (House Salad)",
+            "price": 395,
+            "category": "breakfast",
+            "description": "Creamy mashed avocado on toasted sourdough with house salad.",
+            "tags": [
+                "veg",
+                "staffpick"
+            ]
+        },
+        {
+            "id": "keema-pao",
+            "name": "Keema Pao",
+            "price": 440,
+            "category": "breakfast",
+            "description": "Spicy minced chicken with aromatic Indian spices and buttery pao.",
+            "tags": []
+        },
+        {
+            "id": "chickpea-hummus-salad",
+            "name": "Chickpea Hummus Salad",
+            "price": 270,
+            "category": "breakfast",
+            "description": "Creamy hummus with crisp greens and hearty chickpeas.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "greek-salad",
+            "name": "Greek Salad",
+            "price": 300,
+            "category": "breakfast",
+            "description": "Cucumbers, tomatoes, olives, feta, and olive oil dressing.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "veg-caesar-salad",
+            "name": "Veg Caesar Salad",
+            "price": 300,
+            "category": "breakfast",
+            "description": "Romaine lettuce with Caesar dressing, croutons, and parmesan.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "veg-pesto-salad",
+            "name": "Veg Pesto Salad",
+            "price": 290,
+            "category": "breakfast",
+            "description": "Mixed greens, roasted vegetables, and tangy pesto dressing.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "nonveg-pesto-salad",
+            "name": "Non Veg Pesto Salad",
+            "price": 320,
+            "category": "breakfast",
+            "description": "Grilled chicken over greens with roasted veggies and pesto.",
+            "tags": []
+        },
+        {
+            "id": "nonveg-caesar-salad",
+            "name": "Non Veg Caesar Salad",
+            "price": 360,
+            "category": "breakfast",
+            "description": "Classic Caesar salad with grilled chicken and parmesan.",
+            "tags": []
+        },
+        {
+            "id": "corn-cheese-garlic",
+            "name": "Corn & Cheese Garlic Bread",
+            "price": 190,
+            "category": "breakfast",
+            "description": "Sweet corn, capsicum, onion with mozzarella cheese.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "pesto-paneer-garlic",
+            "name": "Pesto Paneer Garlic Bread",
+            "price": 200,
+            "category": "breakfast",
+            "description": "Pesto marinated paneer with mozzarella cheese.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "chipotle-chicken-garlic",
+            "name": "Chipotle Chicken Garlic Bread",
+            "price": 250,
+            "category": "breakfast",
+            "description": "Chicken sausages, capsicum with house chipotle sauce.",
+            "tags": []
+        },
+        {
+            "id": "churros-bomb",
+            "name": "Churros Bomb",
+            "price": 295,
+            "category": "desserts",
+            "description": "Bite-sized churros tossed in cinnamon sugar with chocolate sauce.",
+            "tags": [
+                "veg",
+                "bestseller"
+            ]
+        },
+        {
+            "id": "matcha-cheesecake",
+            "name": "Cheesecake With Matcha Ganache",
+            "price": 340,
+            "category": "desserts",
+            "description": "Smooth cheesecake with rich matcha & white chocolate ganache.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "tiramisu",
+            "name": "Tiramisu",
+            "price": 315,
+            "category": "desserts",
+            "description": "Classic Italian dessert with coffee-soaked ladyfingers and mascarpone.",
+            "tags": [
+                "staffpick"
+            ]
+        },
+        {
+            "id": "waffles",
+            "name": "Waffles",
+            "price": 290,
+            "category": "desserts",
+            "description": "Crisp golden waffles with syrup, whipped cream, and fresh fruit.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "churros",
+            "name": "Churros",
+            "price": 290,
+            "category": "desserts",
+            "description": "Golden churros with cinnamon sugar and hazelnut ganache.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "pancake",
+            "name": "Pancake",
+            "price": 250,
+            "category": "desserts",
+            "description": "Fluffy pancakes served with syrup and butter.",
+            "tags": [
+                "veg"
+            ]
+        },
+        {
+            "id": "hazelnut-cheesecake",
+            "name": "Hazelnut Cheese Cake",
+            "price": 320,
+            "category": "desserts",
+            "description": "Rich and creamy cheesecake infused with hazelnut flavor.",
+            "tags": [
+                "veg"
+            ]
+        }
+    ]
+}

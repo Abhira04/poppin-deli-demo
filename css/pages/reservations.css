@@ -1,0 +1,187 @@
+/* POPPIN DELI - Reservations Page Styles */
+
+.reserve-hero {
+    padding: var(--space-12) 0;
+    background: linear-gradient(135deg, #FDF8F3 0%, #FFE4E1 100%);
+    text-align: center;
+}
+
+.reserve-hero h1 {
+    font-size: var(--text-4xl);
+    margin-bottom: var(--space-3);
+}
+
+.reserve-hero-subtitle {
+    color: var(--color-text-light);
+    font-style: italic;
+}
+
+.reserve-layout {
+    padding: var(--space-8) 0;
+}
+
+.reserve-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .reserve-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.reserve-form-card {
+    background: var(--color-bg-card);
+    padding: var(--space-8);
+    border-radius: var(--radius-2xl);
+    box-shadow: var(--shadow-lg);
+}
+
+.reserve-form-card h2 {
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-6);
+}
+
+.form-group {
+    margin-bottom: var(--space-5);
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: var(--space-2);
+    font-size: var(--text-sm);
+    color: var(--color-text);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: var(--space-3) var(--space-4);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    font-size: var(--text-base);
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+.form-group textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-4);
+}
+
+@media (max-width: 480px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+.submit-btn {
+    width: 100%;
+    margin-top: var(--space-4);
+}
+
+.reserve-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+}
+
+.info-card {
+    background: var(--color-bg-card);
+    padding: var(--space-6);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-card);
+}
+
+.info-card h3 {
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-3);
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.info-card p,
+.info-card li {
+    font-size: var(--text-sm);
+    color: var(--color-text-light);
+    margin-bottom: var(--space-2);
+}
+
+.info-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-card ul li::before {
+    content: "•";
+    color: var(--color-primary);
+    margin-right: var(--space-2);
+}
+
+.whatsapp-alternative {
+    background: #DCF8C6;
+    border: 1px solid #25D366;
+}
+
+.whatsapp-alternative h3 {
+    color: #128C7E;
+}
+
+.capacity-visual {
+    display: flex;
+    gap: var(--space-4);
+    margin-top: var(--space-4);
+}
+
+.capacity-item {
+    text-align: center;
+    padding: var(--space-3);
+    background: var(--color-bg-alt);
+    border-radius: var(--radius-md);
+    flex: 1;
+}
+
+.capacity-number {
+    font-size: var(--text-2xl);
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+.capacity-label {
+    font-size: var(--text-xs);
+    color: var(--color-text-muted);
+}
+
+.success-message {
+    background: #D4EDDA;
+    border: 1px solid #C3E6CB;
+    color: #155724;
+    padding: var(--space-4);
+    border-radius: var(--radius-md);
+    text-align: center;
+    display: none;
+    margin-top: var(--space-4);
+}
+
+.success-message.show {
+    display: block;
+}

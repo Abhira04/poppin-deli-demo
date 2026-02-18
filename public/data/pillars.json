@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "icon": "🌿",
+        "title": "Fresh Ingredients",
+        "description": "Farm-to-table produce, handpicked daily for every dish."
+    },
+    {
+        "id": 2,
+        "icon": "🍽️",
+        "title": "Comfort Food",
+        "description": "Recipes crafted to feel like home, served with love."
+    },
+    {
+        "id": 3,
+        "icon": "☕",
+        "title": "Cozy Vibe",
+        "description": "Your neighborhood happy place for coffee and conversations."
+    }
+]

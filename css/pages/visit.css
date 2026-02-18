@@ -1,0 +1,379 @@
+/* ==========================================================================
+   POPPIN DELI - Visit Page Styles
+   ========================================================================== */
+
+/* Visit Hero */
+.visit-hero {
+    padding: var(--space-12) 0;
+    background: linear-gradient(135deg, #FDF8F3 0%, #FFE4E1 100%);
+    text-align: center;
+}
+
+.visit-hero h1 {
+    font-size: var(--text-4xl);
+    margin-bottom: var(--space-3);
+}
+
+.visit-hero-subtitle {
+    color: var(--color-text-light);
+    font-style: italic;
+    margin-bottom: var(--space-6);
+}
+
+.visit-hero-badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-2);
+}
+
+/* Action Buttons Row */
+.action-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-3);
+    padding: var(--space-6);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .action-buttons {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.action-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-4);
+    background: var(--color-bg-card);
+    border-radius: var(--radius-lg);
+    text-decoration: none;
+    color: var(--color-text);
+    box-shadow: var(--shadow-card);
+    transition: all var(--transition-fast);
+}
+
+.action-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-card-hover);
+}
+
+.action-btn svg {
+    width: 24px;
+    height: 24px;
+    color: var(--color-primary);
+}
+
+.action-btn span {
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+}
+
+.action-btn.maps {
+    background: var(--color-primary);
+    color: white;
+}
+
+.action-btn.maps svg {
+    color: white;
+}
+
+/* Map Section */
+.map-section {
+    padding: var(--space-8) 0;
+}
+
+.map-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+}
+
+@media (min-width: 768px) {
+    .map-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.map-embed {
+    aspect-ratio: 4/3;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    background: var(--color-bg-alt);
+}
+
+.map-embed iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.address-card {
+    background: var(--color-bg-card);
+    padding: var(--space-6);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-card);
+}
+
+.address-card h3 {
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-4);
+}
+
+.address-line {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-3);
+    margin-bottom: var(--space-3);
+    color: var(--color-text-light);
+}
+
+.address-line svg {
+    width: 20px;
+    height: 20px;
+    color: var(--color-primary);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.address-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    margin-top: var(--space-6);
+}
+
+/* Hours Section */
+.hours-section {
+    padding: var(--space-8) 0;
+    background: var(--color-bg-alt);
+}
+
+.hours-card {
+    background: var(--color-bg-card);
+    padding: var(--space-6);
+    border-radius: var(--radius-xl);
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: var(--shadow-card);
+}
+
+.hours-card h3 {
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-4);
+    position: relative;
+    display: inline-block;
+}
+
+.hours-card h3::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--color-primary);
+    border-radius: 2px;
+}
+
+.hours-main {
+    font-size: var(--text-lg);
+    font-weight: var(--font-semibold);
+    margin: var(--space-6) 0 var(--space-2);
+}
+
+.hours-note {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    font-style: italic;
+}
+
+/* Before You Arrive */
+.arrive-section {
+    padding: var(--space-12) 0;
+}
+
+.arrive-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+    margin-top: var(--space-8);
+}
+
+@media (min-width: 768px) {
+    .arrive-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.arrive-card {
+    background: var(--color-bg-card);
+    padding: var(--space-4);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-3);
+}
+
+.arrive-card-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-md);
+    background: var(--color-bg-alt);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 20px;
+}
+
+.arrive-card-content h4 {
+    font-size: var(--text-sm);
+    font-weight: var(--font-semibold);
+    margin-bottom: 2px;
+}
+
+.arrive-card-content p {
+    font-size: var(--text-xs);
+    color: var(--color-text-muted);
+}
+
+/* Gallery Section */
+.gallery-section {
+    padding: var(--space-12) 0;
+    background: var(--color-bg-alt);
+    overflow: hidden;
+}
+
+.gallery-header {
+    text-align: center;
+    margin-bottom: var(--space-8);
+}
+
+.gallery-header h3 {
+    font-size: var(--text-2xl);
+}
+
+.gallery-header p {
+    color: var(--color-text-muted);
+}
+
+.gallery-slider {
+    display: flex;
+    gap: var(--space-4);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 0 var(--space-4);
+    scrollbar-width: none;
+}
+
+.gallery-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery-item {
+    flex: 0 0 280px;
+    aspect-ratio: 4/3;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    scroll-snap-align: start;
+}
+
+@media (min-width: 768px) {
+    .gallery-item {
+        flex: 0 0 350px;
+    }
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Best Time Section */
+.best-time-section {
+    padding: var(--space-12) 0;
+}
+
+.best-time-list {
+    max-width: 500px;
+    margin: var(--space-8) auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.best-time-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    padding: var(--space-3);
+    background: var(--color-bg-card);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+}
+
+.best-time-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.best-time-dot.green {
+    background: var(--color-status-green);
+}
+
+.best-time-dot.yellow {
+    background: var(--color-status-yellow);
+}
+
+.best-time-dot.red {
+    background: var(--color-status-red);
+}
+
+.best-time-info strong {
+    display: block;
+    font-size: var(--text-sm);
+}
+
+.best-time-info span {
+    font-size: var(--text-xs);
+    color: var(--color-text-muted);
+}
+
+/* Local SEO Section */
+.seo-section {
+    padding: var(--space-8) 0;
+    background: #f9fafb;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.seo-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.seo-content p {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    line-height: 1.8;
+}
+
+.seo-content strong {
+    color: var(--color-text);
+    font-weight: var(--font-medium);
+}

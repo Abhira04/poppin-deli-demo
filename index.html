@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Poppin Deli - A cozy deli cafe in Arera Colony, Bhopal. Fresh brunch, slow coffee & comfort food.">
+  <meta property="og:title" content="Poppin Deli - Fresh Bites & Chill Vibes">
+  <meta property="og:description" content="A cozy deli cafe in Arera Colony — made for slow coffee & comfort food.">
+
+  <link rel="icon" type="image/png" href="./assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/animations.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/pages/home.css">
+
+  <title>Poppin Deli - Fresh Bites & Chill Vibes | Bhopal</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="/" class="header-logo">
+          <span class="header-logo-text">POPPIN' <span>Deli</span></span>
+        </a>
+        <nav class="header-nav">
+          <a href="/" class="header-nav-link active">Home</a>
+          <a href="./menu.html" class="header-nav-link">Menu</a>
+          <a href="./visit.html" class="header-nav-link">Visit</a>
+          <a href="./reservations.html" class="header-nav-link">Reservations</a>
+        </nav>
+        <div class="header-cta">
+          <a href="./order.html" class="btn btn-primary">Order Pickup</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-wrapper">
+    <!-- Hero Section -->
+    <section class="hero">
+      <img src="/assets/hero-bg.png" alt="" class="hero-bg-img" aria-hidden="true">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="status-dot green"></span>
+          <span>Open • 11 AM – 11 PM</span>
+        </div>
+
+        <h1 class="hero-title">
+          <span class="brand-text">Brewed Fresh. Served Warm.</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Coffee • Culture • Cuisine
+        </p>
+
+        <div class="hero-ctas">
+          <a href="./menu.html" class="btn btn-primary btn-lg">Explore Menu</a>
+          <a href="./reservations.html" class="btn btn-secondary btn-lg">Book a Table</a>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <div class="mouse"></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- Loyalty Hook Banner -->
+    <section class="loyalty-banner reveal" id="loyaltyBanner">
+      <div class="container">
+        <div class="loyalty-content">
+          <span class="loyalty-icon">🎁</span>
+          <span class="loyalty-text" id="loyaltyText">Ask for our stamp card in-store ✨</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Live Status Bar -->
+    <section class="status-bar-section">
+      <div class="status-bar-container reveal">
+        <!-- Left: Brand & Status -->
+        <div class="status-bar-brand">
+          <div class="status-bar-logo">
+            <img src="./assets/logo.jpg" alt="Poppin Deli" />
+          </div>
+          <div class="status-bar-info">
+            <h2 class="status-bar-name">Poppin' Deli</h2>
+            <div class="status-bar-live">
+              <span class="status-pulse green"></span>
+              <span class="status-bar-label">Poppin' Right Now</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Center: Hours -->
+        <div class="status-bar-hours">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M12 6v6l4 2"></path>
+          </svg>
+          <div class="status-bar-hours-text">
+            <span class="status-bar-hours-label">Today's Hours</span>
+            <span class="status-bar-hours-value">11 AM – 11 PM</span>
+          </div>
+        </div>
+
+        <!-- Right: Special Message -->
+        <div class="status-bar-special">
+          <span class="status-bar-special-icon">✨</span>
+          <span class="status-bar-special-text">Walk-ins welcome</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Now Brewing (Today's Special) -->
+    <section class="now-brewing-section" id="nowBrewingSection">
+      <div class="container">
+        <div class="now-brewing-card reveal">
+          <div class="now-brewing-badge">☕ NOW BREWING</div>
+          <div class="now-brewing-content" id="nowBrewingContent">
+            <div class="now-brewing-item">
+              <div class="now-brewing-info">
+                <h3>Today's Special</h3>
+                <p>Ask our staff about today's featured drink!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Picks -->
+    <section class="featured-section section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Signature Dishes</h2>
+          <p>Handcrafted favourites loved by our regulars</p>
+        </div>
+        <div class="featured-grid">
+          <div class="featured-card reveal">
+            <div class="featured-card-image">
+              <img src="/assets/menu/loaded-burger.jpg" alt="Spicy Loaded Burger" loading="lazy">
+              <span class="featured-card-tag">Best Seller</span>
+            </div>
+            <div class="featured-card-body">
+              <h3 class="featured-card-title">Spicy Loaded Burger</h3>
+              <p class="featured-card-price">₹349</p>
+            </div>
+          </div>
+          <div class="featured-card reveal">
+            <div class="featured-card-image">
+              <img src="/assets/menu/mexican-bowl.jpg" alt="Zesty Mexican Bowl" loading="lazy">
+              <span class="featured-card-tag">Staff Pick</span>
+            </div>
+            <div class="featured-card-body">
+              <h3 class="featured-card-title">Zesty Mexican Bowl</h3>
+              <p class="featured-card-price">₹329</p>
+            </div>
+          </div>
+          <div class="featured-card reveal">
+            <div class="featured-card-image">
+              <img src="/assets/menu/oreo-shake.jpg" alt="Choco Oreo Shake" loading="lazy">
+              <span class="featured-card-tag">Fan Favourite</span>
+            </div>
+            <div class="featured-card-body">
+              <h3 class="featured-card-title">Choco Oreo Shake</h3>
+              <p class="featured-card-price">₹199</p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center" style="margin-top: var(--space-10);">
+          <a href="/order.html" class="btn btn-primary btn-lg">Order Now →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Signature Specials (Weekly Picks) -->
+    <section class="specials-section section" id="specialsSection">
+      <div class="container">
+        <div class="section-header">
+          <h2>🔥 Poppin' Specials</h2>
+          <p>Limited picks, rotating weekly</p>
+        </div>
+        <div class="specials-grid" id="specialsGrid">
+          <p style="text-align: center; color: var(--color-text-muted);">Loading specials...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories-section section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Explore the Menu</h2>
+          <p>From cozy breakfasts to decadent desserts</p>
+        </div>
+        <div class="categories-grid">
+          <a href="/menu.html#breakfast" class="category-tile reveal">
+            <img src="/assets/menu/pancakes.jpg" alt="Breakfast" loading="lazy">
+            <div class="category-tile-overlay">
+              <span class="category-tile-title">Breakfast</span>
+            </div>
+          </a>
+          <a href="/menu.html#coffee" class="category-tile reveal">
+            <img src="/assets/menu/cappuccino.jpg" alt="Coffee" loading="lazy">
+            <div class="category-tile-overlay">
+              <span class="category-tile-title">Coffee & Coolers</span>
+            </div>
+          </a>
+          <a href="/menu.html#subs" class="category-tile reveal">
+            <img src="/assets/menu/club-sandwich.jpg" alt="Subs" loading="lazy">
+            <div class="category-tile-overlay">
+              <span class="category-tile-title">Subs & Sandwiches</span>
+            </div>
+          </a>
+          <a href="/menu.html#desserts" class="category-tile reveal">
+            <img src="/assets/menu/cheesecake.jpg" alt="Desserts" loading="lazy">
+            <div class="category-tile-overlay">
+              <span class="category-tile-title">Desserts</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Story -->
+    <section class="story-section section">
+      <div class="container">
+        <div class="story-content reveal">
+          <h2>A little deli in the heart of Arera.</h2>
+          <p>
+            Fresh ingredients, hearty bites, and a cozy vibe that feels like home.
+            We're not just a cafe — we're your neighbourhood's favourite hangout spot.
+            Come for the food, stay for the vibe.
+          </p>
+          <a href="/visit.html" class="btn btn-accent btn-lg">Read Our Story</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brand Pillars -->
+    <section class="pillars-section section" id="pillarsSection">
+      <div class="container">
+        <div class="pillars-grid" id="pillarsGrid">
+          <div class="pillar-card reveal">
+            <span class="pillar-icon">🌿</span>
+            <h3>Fresh Ingredients</h3>
+            <p>Farm-to-table produce, handpicked daily for every dish.</p>
+          </div>
+          <div class="pillar-card reveal">
+            <span class="pillar-icon">🍽️</span>
+            <h3>Comfort Food</h3>
+            <p>Recipes crafted to feel like home, served with love.</p>
+          </div>
+          <div class="pillar-card reveal">
+            <span class="pillar-icon">☕</span>
+            <h3>Cozy Vibe</h3>
+            <p>Your neighborhood happy place for coffee and conversations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="reviews-section section">
+      <div class="container">
+        <div class="reviews-header">
+          <div class="reviews-rating">
+            <span>4.8</span>
+            <div class="reviews-stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+            </div>
+          </div>
+          <h2>What Our Customers Say</h2>
+        </div>
+        <div class="reviews-grid">
+          <div class="review-card reveal">
+            <div class="review-card-header">
+              <div class="review-avatar">P</div>
+              <div>
+                <div class="review-author">Priya Sharma</div>
+                <div class="reviews-stars" style="font-size: 14px;">★★★★★</div>
+              </div>
+            </div>
+            <p class="review-text">"Amazing food and fantastic ambience! Loved the Spicy Loaded Burger. Will be coming
+              back for sure!"</p>
+          </div>
+          <div class="review-card reveal">
+            <div class="review-card-header">
+              <div class="review-avatar">R</div>
+              <div>
+                <div class="review-author">Rahul Verma</div>
+                <div class="reviews-stars" style="font-size: 14px;">★★★★★</div>
+              </div>
+            </div>
+            <p class="review-text">"Perfect spot for a cozy brunch date. The Basque Cheesecake is to die for!"</p>
+          </div>
+          <div class="review-card reveal">
+            <div class="review-card-header">
+              <div class="review-avatar">A</div>
+              <div>
+                <div class="review-author">Ananya Gupta</div>
+                <div class="reviews-stars" style="font-size: 14px;">★★★★★</div>
+              </div>
+            </div>
+            <p class="review-text">"Best coffee in Bhopal, hands down! The vibe is just immaculate. 10/10 recommend."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visit Us -->
+    <section class="visit-section section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Visit Us</h2>
+          <p>Find us in Arera Colony, Bhopal</p>
+        </div>
+        <div class="visit-grid">
+          <div class="visit-map reveal">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.5!2d77.43!3d23.23!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sArera%20Colony%2C%20Bhopal!5e0!3m2!1sen!2sin"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div class="visit-info">
+            <div class="visit-info-card reveal">
+              <div class="visit-info-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                </svg>
+              </div>
+              <div>
+                <h4>Address</h4>
+                <p>E-2/265, Arera Colony, Bhopal</p>
+              </div>
+            </div>
+            <div class="visit-info-card reveal">
+              <div class="visit-info-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div>
+                <h4>Hours</h4>
+                <p>Daily: 11 AM – 11 PM</p>
+              </div>
+            </div>
+            <div class="visit-info-card reveal">
+              <div class="visit-info-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+              </div>
+              <div>
+                <h4>Contact</h4>
+                <p>+91 87707 69691</p>
+              </div>
+            </div>
+            <div class="visit-buttons">
+              <a href="https://maps.google.com/?q=E-2/265,+Arera+Colony,+Bhopal" target="_blank"
+                class="btn btn-primary">Open in Maps</a>
+              <a href="tel:+918770769691" class="btn btn-secondary">Call Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo"><span class="header-logo-text">POPPIN' <span>Deli</span></span></div>
+          <p class="footer-tagline">A cozy deli cafe in Arera Colony — made for slow coffee & comfort food.</p>
+          <div class="footer-social">
+            <a href="https://instagram.com/poppindeli" target="_blank" aria-label="Instagram"><svg
+                xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg></a>
+            <a href="https://facebook.com/poppindeli" target="_blank" aria-label="Facebook"><svg
+                xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+              </svg></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <div class="footer-links"><a href="/menu.html">Menu</a><a href="/order.html">Order Online</a><a
+              href="/visit.html">Visit Us</a><a href="/reservations.html">Reservations</a></div>
+        </div>
+        <div class="footer-section">
+          <h4>Hours</h4>
+          <div class="footer-links"><span>Monday - Sunday</span><span>11:00 AM - 11:00 PM</span></div>
+        </div>
+        <div class="footer-section footer-contact">
+          <h4>Contact</h4>
+          <p>E-2/265, Arera Colony, Bhopal</p>
+          <p>+91 87707 69691</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2026 Poppin Deli. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav">
+    <a href="/menu.html" class="mobile-nav-item"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor" width="24" height="24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+      </svg><span>Menu</span></a>
+    <a href="https://wa.me/918770769691" target="_blank" class="mobile-nav-item whatsapp"><svg
+        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+      </svg><span>WhatsApp</span></a>
+    <a href="https://maps.google.com/?q=E-2/265,+Arera+Colony,+Bhopal" target="_blank" class="mobile-nav-item"><svg
+        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24" height="24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+      </svg><span>Directions</span></a>
+    <a href="/reservations.html" class="mobile-nav-item"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+        viewBox="0 0 24 24" stroke="currentColor" width="24" height="24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+      </svg><span>Book</span></a>
+  </nav>
+
+  <script>
+    // Reveal animations on scroll - works without modules
+    document.addEventListener('DOMContentLoaded', function () {
+      const revealElements = document.querySelectorAll('.reveal');
+      const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry, index) {
+          if (entry.isIntersecting) {
+            setTimeout(function () {
+              entry.target.classList.add('visible');
+            }, index * 100);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+      revealElements.forEach(function (el) { observer.observe(el); });
+
+      // Try to load live status (works only on server)
+      loadLiveStatus();
+    });
+
+    async function loadLiveStatus() {
+      try {
+        // Try to fetch status from server
+        const response = await fetch('/data/status.json');
+        if (!response.ok) throw new Error('Not on server');
+        const status = await response.json();
+        updateStatusUI(status);
+      } catch (error) {
+        // Use default values when opened via file:// or fetch fails
+        console.log('Using default status (file:// protocol or fetch failed)');
+        updateStatusUI({ status: 'green', label: 'Poppin\' Right Now', note: 'Walk-ins welcome' });
+      }
+    }
+
+    function updateStatusUI(status) {
+      // Update hero badge dot
+      const heroBadgeDot = document.querySelector('.hero-badge .status-dot');
+      if (heroBadgeDot) {
+        heroBadgeDot.className = 'status-dot ' + (status.status || 'green');
+      }
+
+      // Update status bar (premium design)
+      const statusPulse = document.querySelector('.status-pulse');
+      const statusLabel = document.querySelector('.status-bar-label');
+      const specialText = document.querySelector('.status-bar-special-text');
+
+      if (statusPulse) {
+        statusPulse.className = 'status-pulse ' + (status.status || 'green');
+      }
+
+      if (statusLabel) {
+        statusLabel.textContent = status.label || 'Open Now';
+        var colors = { green: '#22c55e', yellow: '#eab308', red: '#ef4444' };
+        statusLabel.style.color = colors[status.status] || colors.green;
+      }
+
+      if (specialText) {
+        if (status.waitTime && status.waitTime > 0) {
+          specialText.textContent = status.waitTime + ' min wait';
+        } else {
+          specialText.textContent = status.note || 'Walk-ins welcome';
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>

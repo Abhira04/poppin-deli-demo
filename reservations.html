@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Book a table at Poppin Deli, Bhopal. Perfect for brunch dates, small gatherings, and cozy meetups.">
+    <link rel="icon" type="image/png" href="./assets/favicon.png">
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/pages/reservations.css">
+    <title>Book a Table | Poppin Deli</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="./" class="header-logo"><span class="header-logo-text">POPPIN' <span>Deli</span></span></a>
+                <nav class="header-nav">
+                    <a href="./" class="header-nav-link">Home</a>
+                    <a href="./menu.html" class="header-nav-link">Menu</a>
+                    <a href="./visit.html" class="header-nav-link">Visit</a>
+                    <a href="./reservations.html" class="header-nav-link active">Reservations</a>
+                </nav>
+                <div class="header-cta"><a href="./order.html" class="btn btn-primary">Order Pickup</a></div>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-wrapper">
+        <section class="reserve-hero">
+            <div class="container">
+                <h1>Book a Table</h1>
+                <p class="reserve-hero-subtitle">Reserve your spot for brunch, dates, or small gatherings.</p>
+                <div class="visit-hero-badges" style="margin-top: var(--space-4);">
+                    <span class="badge">🪑 Limited Seating</span>
+                    <span class="badge">📱 Confirm via WhatsApp</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="reserve-layout">
+            <div class="container">
+                <div class="reserve-grid">
+                    <div class="reserve-form-card reveal">
+                        <h2>Make a Reservation</h2>
+                        <form id="reservationForm" onsubmit="handleSubmit(event)">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="+91 87707 69691">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="date">Date</label>
+                                    <input type="date" id="date" name="date" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="time">Preferred Time</label>
+                                    <select id="time" name="time" required>
+                                        <option value="">Select time</option>
+                                        <option value="11:00">11:00 AM</option>
+                                        <option value="12:00">12:00 PM</option>
+                                        <option value="13:00">1:00 PM</option>
+                                        <option value="14:00">2:00 PM</option>
+                                        <option value="15:00">3:00 PM</option>
+                                        <option value="16:00">4:00 PM</option>
+                                        <option value="17:00">5:00 PM</option>
+                                        <option value="18:00">6:00 PM</option>
+                                        <option value="19:00">7:00 PM</option>
+                                        <option value="20:00">8:00 PM</option>
+                                        <option value="21:00">9:00 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="guests">Number of Guests</label>
+                                <select id="guests" name="guests" required>
+                                    <option value="">Select guests</option>
+                                    <option value="1">1 person</option>
+                                    <option value="2">2 people</option>
+                                    <option value="3">3 people</option>
+                                    <option value="4">4 people</option>
+                                    <option value="5">5 people</option>
+                                    <option value="6">6+ people (contact us)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="notes">Special Requests (optional)</label>
+                                <textarea id="notes" name="notes"
+                                    placeholder="Birthday, anniversary, dietary needs..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg submit-btn">Request Reservation</button>
+                            <div class="success-message" id="successMessage">
+                                ✅ Reservation request received! We'll confirm via WhatsApp shortly.
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="reserve-info">
+                        <div class="info-card whatsapp-alternative reveal">
+                            <h3>💬 Prefer WhatsApp?</h3>
+                            <p>Send your reservation request directly:</p>
+                            <a href="https://wa.me/918770769691?text=Hi!%20I'd%20like%20to%20book%20a%20table%20at%20Poppin%20Deli.%0A%0ADate:%0ATime:%0AGuests:"
+                                target="_blank" class="btn btn-whatsapp" style="margin-top: var(--space-3);">
+                                Book via WhatsApp
+                            </a>
+                        </div>
+
+                        <div class="info-card reveal">
+                            <h3>📋 Reservation Policy</h3>
+                            <ul>
+                                <li>Reservations accepted 1 day in advance</li>
+                                <li>Table held for 15 mins past booking time</li>
+                                <li>For groups of 6+, please call ahead</li>
+                                <li>Walk-ins welcome based on availability</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-card reveal">
+                            <h3>🪑 Seating Capacity</h3>
+                            <div class="capacity-visual">
+                                <div class="capacity-item">
+                                    <div class="capacity-number">20</div>
+                                    <div class="capacity-label">Total Seats</div>
+                                </div>
+                                <div class="capacity-item">
+                                    <div class="capacity-number">5</div>
+                                    <div class="capacity-label">Tables for 2</div>
+                                </div>
+                                <div class="capacity-item">
+                                    <div class="capacity-number">2</div>
+                                    <div class="capacity-label">Tables for 4</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-card reveal">
+                            <h3>📞 Need Help?</h3>
+                            <p>Call us at <strong>+91 87707 69691</strong></p>
+                            <p>Open daily 11AM - 11PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2026 Poppin Deli. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <nav class="mobile-nav">
+        <a href="./menu.html" class="mobile-nav-item"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" width="24" height="24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+            </svg><span>Menu</span></a>
+        <a href="https://wa.me/918770769691" target="_blank" class="mobile-nav-item whatsapp"><svg
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+            </svg><span>WhatsApp</span></a>
+        <a href="https://maps.google.com/?q=E-2/265,+Arera+Colony,+Bhopal" target="_blank" class="mobile-nav-item"><svg
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24"
+                height="24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+            </svg><span>Directions</span></a>
+        <a href="./reservations.html" class="mobile-nav-item active"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" width="24" height="24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg><span>Book</span></a>
+    </nav>
+
+    <script>
+        // Set min date to today
+        document.getElementById('date').min = new Date().toISOString().split('T')[0];
+
+        function handleSubmit(e) {
+            e.preventDefault();
+            const form = e.target;
+            const data = new FormData(form);
+
+            // Build WhatsApp message
+            const msg = `Hi! I'd like to book a table at Poppin Deli.
+
+Name: ${data.get('name')}
+Phone: ${data.get('phone')}
+Date: ${data.get('date')}
+Time: ${data.get('time')}
+Guests: ${data.get('guests')}
+Notes: ${data.get('notes') || 'None'}`;
+
+            // Open WhatsApp with prefilled message
+            window.open(`https://wa.me/918770769691?text=${encodeURIComponent(msg)}`, '_blank');
+
+            // Show success
+            document.getElementById('successMessage').classList.add('show');
+            form.reset();
+        }
+
+        // Reveal animation
+        document.querySelectorAll('.reveal').forEach(el => {
+            new IntersectionObserver(e => { if (e[0].isIntersecting) el.classList.add('visible'); }, { threshold: 0.1 }).observe(el);
+        });
+    </script>
+</body>
+
+</html>

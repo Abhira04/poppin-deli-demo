@@ -1,0 +1,170 @@
+id,name,category,description,price,isVeg,tags,imageUrl,isAvailable,sortOrder
+101,Sweet Potato Fries,Food,"Crispy, golden sweet potato fries with a hint of natural sweetness.",290,TRUE,,,TRUE,1
+102,Korean Corn Dog,Food,"A crunchy, cheesy corn dog with bold Korean street-style flair.",360,TRUE,,,TRUE,2
+103,Japanese Sesame Chicken,Food,Crispy chicken tossed in a sweet-savory sesame glaze.,400,FALSE,,,TRUE,3
+104,Veg Miso Ramen,Food,"A hearty bowl of veggies in a rich, umami miso broth.",450,TRUE,,,TRUE,4
+105,Chicken Miso Ramen,Food,"Tender chicken served in a deep, comforting miso broth.",485,FALSE,,,TRUE,5
+106,Veg Korean Ramen,Food,Spicy Korean-style ramen loaded with vegetables.,450,TRUE,spicy,,TRUE,6
+107,Chicken Korean Ramen,Food,Fiery Korean ramen with juicy chicken and bold flavors.,485,FALSE,spicy,,TRUE,7
+201,Pesto Spaghetti,Pastas,"Spaghetti tossed in a vibrant basil pesto sauce, topped with parmesan and toasted pine nuts.",410,TRUE,,,TRUE,1
+202,Pasta Combo,Pastas,"Pick 1 Pasta, 1 Beverage and a Dessert of your choice.",325,TRUE,bestseller,,TRUE,2
+203,Alfredo Pasta,Pastas,Creamy Alfredo sauce tossed with pasta.,410,TRUE,,,TRUE,3
+204,Cajun Alfredo Spaghetti,Pastas,Spaghetti in a creamy Cajun sauce with tomatoes and cream.,430,TRUE,spicy,,TRUE,4
+205,Aglio O Olio Spaghetti,Pastas,"Simple yet flavorful pasta with garlic, olive oil, and red pepper flakes.",410,TRUE,,,TRUE,5
+206,Arrabiata Penne,Pastas,"Spicy tomato-based pasta with garlic, chili, and fresh herbs.",430,TRUE,spicy,,TRUE,6
+301,Firecracker Burger (Non Veg),Burgers,"Spicy burger with chicken patty, jalapenos, spicy mayo, and crisp lettuce.",480,FALSE,"bestseller,spicy",,TRUE,1
+302,Seekh Kebab Burger,Burgers,"Smoky, spiced seekh kebab in a bun with chutney and slaw.",485,FALSE,staffpick,,TRUE,2
+303,Big Papi Burger,Burgers,Crispy chicken burger with smoky chipotle sauce and fresh lettuce.,480,FALSE,,,TRUE,3
+304,Firecracker Burger (Veg),Burgers,Veggie patty with fresh lettuce and fiery house sauce.,410,TRUE,spicy,,TRUE,4
+305,Smash Lamb Burger,Burgers,"Juicy smashed lamb double patty with cheese, caramelised onion, and animal sauce.",670,FALSE,bestseller,,TRUE,5
+306,BBQ Mushroom Burger,Burgers,"Crunchy BBQ mushrooms with lettuce, cheese and house sauce.",430,TRUE,,,TRUE,6
+307,Cajun Fried Paneer Burger,Burgers,Crispy Cajun-spiced paneer with creamy mayo and tangy pickles.,445,TRUE,spicy,,TRUE,7
+401,Classic BLT Sandwich,Sandwiches,"Crispy bacon, fresh lettuce, juicy tomato, and creamy mayo on French loaf.",520,FALSE,bestseller,,TRUE,1
+402,Mumbai Masala Sandwich,Sandwiches,"Spiced potato, beetroot & cheese with chutney, toasted between buttered bread.",320,TRUE,,,TRUE,2
+403,Philly Cheese Sandwich,Sandwiches,"Sauteed mushrooms, melted cheese, caramelized onions, and bell peppers.",350,TRUE,,,TRUE,3
+404,Pulled Lamb Sandwich,Sandwiches,"Slow-cooked lamb, caramelised onions, and cheese.",437,FALSE,staffpick,,TRUE,4
+405,Chicken Pesto Sandwich,Sandwiches,Fresh basil pesto paired with grilled chicken.,385,FALSE,,,TRUE,5
+406,Paneer Pesto Sandwich,Sandwiches,Fresh basil pesto paired with grilled paneer.,360,TRUE,,,TRUE,6
+407,Chicken Tikka Sandwich,Sandwiches,Smoky tikka stuffed between toasted bread with mint chutney.,375,FALSE,,,TRUE,7
+408,Paneer Tikka Sandwich,Sandwiches,Smoky tikka stuffed between toasted bread with mint chutney.,350,TRUE,,,TRUE,8
+501,Smoked Chicken Hummus Board,Tapas & Sliders,"Creamy hummus with pita, fresh veggies and smoked chicken.",285,FALSE,,,TRUE,1
+502,Falafel Hummus Board,Tapas & Sliders,"Creamy hummus with pita, fresh veggies and falafel.",250,TRUE,,,TRUE,2
+503,Chicken Kathi Roll,Tapas & Sliders,"Succulent chicken chunks, sauteed onions, and masalas rolled in paratha.",280,FALSE,,,TRUE,3
+504,Malai Broccoli,Tapas & Sliders,Char-grilled broccoli coated in creamy malai and spices.,250,TRUE,,,TRUE,4
+505,Avocado Bhel,Tapas & Sliders,"Puffed rice, tangy chutneys, and fresh guacamole.",290,TRUE,staffpick,,TRUE,5
+506,Paneer Kathi Roll,Tapas & Sliders,Tawa-seared paneer tikka wrapped in a flaky paratha.,260,TRUE,,,TRUE,6
+507,Pita Chips & Dips,Tapas & Sliders,"Toasted pita crisps with hummus, chipotle, salsa, and sour cream.",210,TRUE,,,TRUE,7
+508,Mexican Bean Slider,Tapas & Sliders,"Mini bun with spiced Mexican beans, salsa, and cheese.",270,TRUE,,,TRUE,8
+509,Dabheli Sliders,Tapas & Sliders,Mini Gujarati-style spicy potato burgers with chutneys and sev.,190,TRUE,,,TRUE,9
+510,Chicken Chapli Sliders,Tapas & Sliders,Juicy chicken chapli patties with creamy mint mayo.,280,FALSE,,,TRUE,10
+511,Vada Pav Sliders,Tapas & Sliders,Mini batata vadas in buttery pav with spicy chutney.,250,TRUE,,,TRUE,11
+512,Cheese Vada Pav Sliders,Tapas & Sliders,Classic vada pav with a molten cheese twist.,270,TRUE,bestseller,,TRUE,12
+513,Korean BBQ Chicken,Tapas & Sliders,Tender fried chicken in Korean BBQ sauce with sautéed veggies.,390,FALSE,bestseller,,TRUE,13
+514,Classic Salted Fries,Tapas & Sliders,"Crispy golden fries, lightly salted and served hot.",270,TRUE,,,TRUE,14
+515,Korean BBQ Paneer,Tapas & Sliders,Grilled paneer in sweet and savory Korean BBQ sauce.,370,TRUE,,,TRUE,15
+516,Cajun Potato Fries,Tapas & Sliders,Spicy Cajun-seasoned fries with a hint of heat.,280,TRUE,spicy,,TRUE,16
+517,Garlic Honey Crispy Chicken,Tapas & Sliders,Crispy chicken tenders with sweet garlic honey sauce.,450,FALSE,,,TRUE,17
+601,Classic Margherita Pizza,Pizza,San Marzano tomato sauce with mozzarella and fresh basil.,460,TRUE,,,TRUE,1
+602,Wicked Pepperoni Pizza,Pizza,"Lamb pepperoni, San Marzano sauce, mozzarella blend.",590,FALSE,bestseller,,TRUE,2
+603,Chicken Tikka Pizza,Pizza,"Chicken in desi spices, onion, makhani sauce, mozzarella.",570,FALSE,,,TRUE,3
+604,Mexican Pizza,Pizza,"Hot sauce, corn, onion, capsicum, jalapeno, mozzarella.",530,TRUE,spicy,,TRUE,4
+605,Paneer Tikka Pizza,Pizza,"Paneer in Indian spices, onion, capsicum, makhani sauce.",570,TRUE,,,TRUE,5
+606,Park Avenue Pizza,Pizza,"Mushroom, bellpepper, broccoli on San Marzano sauce.",540,TRUE,,,TRUE,6
+607,Chicken Paprika Pizza,Pizza,"Hot sauce marinated chicken, red paprika, mozzarella.",540,FALSE,spicy,,TRUE,7
+608,Sunny Shroom Pizza,Pizza,"Mushrooms, olives, and cheese on a crisp crust.",500,TRUE,,,TRUE,8
+609,Pesto Mushroom Pizza,Pizza,"Basil pesto, mozzarella, and mushrooms.",535,TRUE,,,TRUE,9
+610,Loaded Chicken Pizza,Pizza,A meaty chicken lover's dream with extra cheese.,595,FALSE,staffpick,,TRUE,10
+611,Classic BLT Pizza,Pizza,A classic BLT reinvented on pizza.,649,FALSE,,,TRUE,11
+612,Pesto Fried Chicken Pizza,Pizza,Golden fried chicken on pesto-smeared cheesy pizza.,560,FALSE,,,TRUE,12
+613,Four Cheese Pizza,Pizza,"A rich medley of four cheeses, gooey and golden.",550,TRUE,bestseller,,TRUE,13
+614,Fiery Chicken Pizza,Pizza,"Spicy, juicy chicken with a punch of heat.",550,FALSE,spicy,,TRUE,14
+701,Jerk Chicken Burrito,Mexican,"Jamaican jerk chicken, rice, beans, and spices in a warm tortilla.",370,FALSE,,,TRUE,1
+702,Chicken Fajita Burrito,Mexican,"Grilled chicken with fajita seasoning, peppers, onions, rice, beans.",370,FALSE,,,TRUE,2
+703,Mushroom Fajita Burrito,Mexican,"Sauteed mushrooms with fajita spices, veggies, and sauces.",350,TRUE,,,TRUE,3
+704,Chimichuri Paneer Burrito,Mexican,Zesty chimichurri sauce with grilled paneer and fresh veggies.,340,TRUE,,,TRUE,4
+705,Mexican Bean Taco,Mexican,"Spiced beans, salsa, and avocado in a soft tortilla.",250,TRUE,,,TRUE,5
+706,Chimichurri Cottage Cheese Taco,Mexican,Grilled cottage cheese with chimichurri sauce and crunchy slaw.,320,TRUE,,,TRUE,6
+707,Crispy Southwest Taco,Mexican,"Crispy chicken with chipotle sauce, lettuce and salsa.",400,FALSE,,,TRUE,7
+708,Chicken Tikka Taco,Mexican,Chicken tikka in a soft taco with salad and yogurt sauce.,360,FALSE,,,TRUE,8
+709,Chimichurri Chicken Taco,Mexican,"Chicken with chimichurri sauce, slaw, and chipotle drizzle.",360,FALSE,,,TRUE,9
+710,Quesso Birria Taco,Mexican,Tender slow-cooked lamb with birria sauce and dipping broth.,430,FALSE,staffpick,,TRUE,10
+711,Paneer Tikka Taco,Mexican,Grilled paneer tikka with pickled onions and mint chutney.,350,TRUE,,,TRUE,11
+712,Cajun Paneer Taco,Mexican,Spicy Cajun-seasoned paneer with fresh veggies.,390,TRUE,spicy,,TRUE,12
+713,Chicken Tikka Bowl,Mexican,Char-grilled chicken tikka on herbed rice with chutneys.,437,FALSE,,,TRUE,13
+714,Cajun Paneer Bowl,Mexican,"Cajun-spiced paneer over rice with salsa, sour cream, guacamole.",350,TRUE,,,TRUE,14
+715,Paneer Tikka Bowl,Mexican,Char-grilled paneer tikka on herbed rice with chutneys.,420,TRUE,,,TRUE,15
+716,Mushroom Fajita Bowl,Mexican,Fajita-spiced mushrooms on a hearty rice bowl.,437,TRUE,,,TRUE,16
+717,Lamb Birria Bowl,Mexican,Slow-cooked lamb in birria sauce over rice with salsa and guac.,480,FALSE,bestseller,,TRUE,17
+718,Chicken Fajita Bowl,Mexican,Grilled chicken in fajita seasoning with veggies and rice.,430,FALSE,,,TRUE,18
+719,Jerk Chicken Bowl,Mexican,Jamaican jerk chicken over rice and beans with guacamole.,430,FALSE,,,TRUE,19
+720,Mexican Bowl Combo,Mexican,"Pick 1 Mexican Bowl, 1 Beverage and a Dessert.",365,TRUE,bestseller,,TRUE,20
+801,Chicken Kadhai With Lacha Paratha,Indian Mains,Bold kadhai-style chicken curry with soft lacha parathas.,315,FALSE,,,TRUE,1
+802,Chole Masala With Stuffed Kulcha,Indian Mains,"Tangy North Indian chickpeas with soft, stuffed kulchas.",295,TRUE,,,TRUE,2
+803,Paneer Kadhai With Lacha Paratha,Indian Mains,"Wok-tossed paneer in spicy kadhai masala, served with flakey paratha.",295,TRUE,,,TRUE,3
+804,Indian Meal Combo,Indian Mains,"Pick 1 Indian Meal, 1 Beverage and a Dessert.",350,TRUE,bestseller,,TRUE,4
+805,Chicken Chettinad With Paratha,Indian Mains,"Fiery, peppery Chettinad-style chicken curry with crisp paratha.",305,FALSE,spicy,,TRUE,5
+806,Paneer Makhani & Laccha Paratha,Indian Mains,"Smooth paneer in tomato-based makhani sauce with laccha paratha.",380,TRUE,,,TRUE,6
+807,Dal Makhani & Laccha Paratha,Indian Mains,Creamy dal makhani with flaky laccha paratha.,290,TRUE,bestseller,,TRUE,7
+808,Dum Ka Murgh Rice Bowl,Indian Mains,Fragrant basmati rice with tender dum-style chicken.,390,FALSE,,,TRUE,8
+809,Veg Korma With Paratha,Indian Mains,"Creamy, spiced vegetable curry with flaky paratha.",270,TRUE,,,TRUE,9
+810,Dal Makhani Rice Bowl,Indian Mains,Slow-cooked black lentils in buttery sauce over herb rice.,330,TRUE,,,TRUE,10
+811,Chole Masala With Herb Rice,Indian Mains,Zesty chole with aromatic herb-infused rice.,260,TRUE,,,TRUE,11
+812,Chicken Makhani & Laccha Paratha,Indian Mains,Classic butter chicken with traditional laccha paratha.,440,FALSE,staffpick,,TRUE,12
+813,Dum Ka Paneer Rice Bowl,Indian Mains,Flavorful dum-cooked herb rice with marinated paneer.,370,TRUE,,,TRUE,13
+814,Extra Stuffed Kulcha,Indian Mains,Loaded with flavorful fillings.,50,TRUE,,,TRUE,14
+815,Extra Laccha Paratha (1 Piece),Indian Mains,Flaky layered paratha.,30,TRUE,,,TRUE,15
+901,Black Pepper Chicken Rice Bowl,Continental,Juicy chicken meatballs in black pepper gravy with egg rice.,445,FALSE,,,TRUE,1
+902,Grilled Fish With Berry Coulis,Continental,"Grilled Samal fish with sweet-tart berry reduction, mash & veggies.",695,FALSE,staffpick,,TRUE,2
+903,Black Pepper Veggie Rice Bowl,Continental,Stir-fried vegetables in black pepper gravy with corn rice.,405,TRUE,,,TRUE,3
+904,Grilled Chicken On Hummus,Continental,Spiced grilled chicken on hummus with pita sticks and salad.,385,FALSE,,,TRUE,4
+905,Paneer Roulade On Hummus,Continental,Herb-spiced paneer roulade on creamy hummus with pita and salad.,350,TRUE,,,TRUE,5
+906,Fiery Chicken With Corn Rice,Continental,"Bold, spicy stir-fry served with comforting corn rice.",465,FALSE,spicy,,TRUE,6
+907,Fiery Paneer With Corn Rice,Continental,"Bold, spicy stir-fry served with comforting corn rice.",445,TRUE,spicy,,TRUE,7
+908,Chilli Paprika Chicken,Continental,"Tangy paprika sauce with a fiery kick, served with garlic bread.",465,FALSE,spicy,,TRUE,8
+909,Chilli Paprika Paneer,Continental,"Tangy paprika sauce with a fiery kick, served with garlic bread.",445,TRUE,spicy,,TRUE,9
+910,Grilled Paneer Steak,Continental,Hearty grilled paneer steak with vegetables and red wine sauce.,390,TRUE,,,TRUE,10
+911,Grilled Chicken,Continental,Tender grilled chicken breast with vegetables and red wine sauce.,450,FALSE,,,TRUE,11
+912,Creamy Cajun Rice Bowl: Veg,Continental,Cajun-seasoned paneer with roasted vegetables in creamy gravy.,440,TRUE,spicy,,TRUE,12
+913,Creamy Cajun Rice Bowl: Chicken,Continental,Cajun-seasoned chicken in creamy gravy over rice.,460,FALSE,spicy,,TRUE,13
+1001,Chicken Makhani Biryani,Biryani,Butter chicken meets biryani in this rich indulgent dish.,365,FALSE,bestseller,,TRUE,1
+1002,Biryani Combo,Biryani,"Pick 1 Biryani, 1 Beverage and a Dessert.",350,TRUE,,,TRUE,2
+1003,Paneer Makhani Biryani,Biryani,Creamy makhani-flavored paneer with fragrant biryani rice.,340,TRUE,,,TRUE,3
+1004,Veg Biryani With Raita,Biryani,Aromatic basmati rice with mixed vegetables and whole spices.,360,TRUE,,,TRUE,4
+1005,Chicken Tikka Biryani With Raita,Biryani,Succulent chicken tikka layered with fragrant rice and spices.,440,FALSE,staffpick,,TRUE,5
+1101,Saigon Coconut Iced Latte,Coffee & Cold Brews,Chilled espresso with coconut and condensed milk.,260,TRUE,,,TRUE,1
+1102,Iced Long Black,Coffee & Cold Brews,"Bold, chilled espresso with zero frills.",200,TRUE,,,TRUE,2
+1103,Vanilla Sweet Cream Cold Brew,Coffee & Cold Brews,Smooth cold brew with lush vanilla cream.,260,TRUE,bestseller,,TRUE,3
+1104,Pineapple Cold Brew Tonic,Coffee & Cold Brews,Tropical pineapple and fizzy tonic with cold brew.,270,TRUE,,,TRUE,4
+1105,Shaken Vanilla Latte,Coffee & Cold Brews,Creamy vanilla latte shaken with ice.,280,TRUE,staffpick,,TRUE,5
+1106,Berry Brew,Coffee & Cold Brews,Bold espresso with sweet and tart cranberry flavors.,260,TRUE,,,TRUE,6
+1107,Iced Latte,Coffee & Cold Brews,Cold espresso with milk served over ice.,215,TRUE,,,TRUE,7
+1108,Classic Cold Coffee,Coffee & Cold Brews,Chilled coffee with milk and ice.,240,TRUE,,,TRUE,8
+1109,Iced Americano,Coffee & Cold Brews,Bold espresso with cold water and ice.,175,TRUE,,,TRUE,9
+1110,Vietnamese Cold Brew,Coffee & Cold Brews,Smooth cold brew with sweetened condensed milk.,280,TRUE,,,TRUE,10
+1111,Pop Espresso,Coffee & Cold Brews,"Passionfruit, lemongrass, and bold espresso.",260,TRUE,staffpick,,TRUE,11
+1112,Sea Salt Caramel Shaken Latte,Coffee & Cold Brews,Shaken iced latte with sweet caramel and sea salt.,280,TRUE,,,TRUE,12
+1113,Cold Brew (Rum Barrel) - 200 ML,Coffee & Cold Brews,Cold brew aged in rum barrels for a smooth experience.,260,TRUE,,,TRUE,13
+1114,Iced Flatwhite,Coffee & Cold Brews,Smooth iced flat white with micro-foam milk.,220,TRUE,,,TRUE,14
+1115,Iced Cappuccino,Coffee & Cold Brews,Chilled cappuccino with frothy milk over ice.,190,TRUE,,,TRUE,15
+1201,Guava Chilli,Coolers & Tea,Sweet guava juice with a hint of chili.,225,TRUE,spicy,,TRUE,1
+1202,Pink Lemonade,Coolers & Tea,Sweet and tangy pink lemonade with watermelon flavor.,235,TRUE,,,TRUE,2
+1203,Orange Cranberry,Coolers & Tea,Fruity orange and cranberry soda over ice.,270,TRUE,,,TRUE,3
+1204,Passion Pop: Passion Fruit Soda,Coolers & Tea,"Bubbly soda with passion fruit, lemongrass, and kaffir lime.",280,TRUE,,,TRUE,4
+1205,Fresh Lime Water/Soda,Coolers & Tea,Fresh lime juice with sparkling or still water.,160,TRUE,,,TRUE,5
+1206,Lychee Lemon Bliss,Coolers & Tea,"Lychee and lemon over ice, light and zesty.",200,TRUE,,,TRUE,6
+1207,Masala Lemonade,Coolers & Tea,Lemonade infused with Indian spices and herbs.,175,TRUE,,,TRUE,7
+1208,Hibiscus Iced Tea,Coolers & Tea,Vibrant floral iced tea with a slightly tart flavor.,190,TRUE,,,TRUE,8
+1209,Lemon Iced Tea,Coolers & Tea,Refreshing iced tea with a splash of lemon.,175,TRUE,,,TRUE,9
+1210,Peach Iced Tea,Coolers & Tea,Sweet iced tea made with ripe peaches.,190,TRUE,,,TRUE,10
+1211,Thumbs Up,Coolers & Tea,Classic cola.,60,TRUE,,,TRUE,11
+1212,Sprite,Coolers & Tea,Lemon-lime soda.,60,TRUE,,,TRUE,12
+1213,Coke,Coolers & Tea,Classic cola.,60,TRUE,,,TRUE,13
+1214,Diet Coke,Coolers & Tea,Sugar-free cola.,60,TRUE,,,TRUE,14
+1215,Red Bull,Coolers & Tea,Energy drink.,200,TRUE,,,TRUE,15
+1301,Shaken Vanilla Matcha Latte,Matcha,"Matcha, vanilla, and ice in a cool, creamy shake-up.",260,TRUE,,,TRUE,1
+1302,Blueberry Matcha Latte,Matcha,Velvety matcha with a splash of blueberry magic.,270,TRUE,,,TRUE,2
+1303,Iced Matcha Latte,Matcha,Earthy matcha and cold milk for a green pick-me-up.,225,TRUE,,,TRUE,3
+1304,Strawberry Matcha Latte,Matcha,Sweet strawberries and bold matcha.,270,TRUE,bestseller,,TRUE,4
+1401,Seasonal Berry Bowl,All Day Breakfast,Seasonal berries with crunchy granola and honey.,430,TRUE,,,TRUE,1
+1402,Strawberry Smoothie Bowl,All Day Breakfast,Creamy blended strawberries with fresh fruits and granola.,430,TRUE,,,TRUE,2
+1403,Berry Smoothie,All Day Breakfast,Cool and creamy blend of blueberries and yogurt.,310,TRUE,,,TRUE,3
+1404,Strawberry Smoothie,All Day Breakfast,Classic strawberry smoothie with ripe strawberries.,310,TRUE,,,TRUE,4
+1405,Avo Snob (House Salad),All Day Breakfast,Creamy mashed avocado on toasted sourdough with house salad.,395,TRUE,staffpick,,TRUE,5
+1406,Keema Pao,All Day Breakfast,Spicy minced chicken with aromatic Indian spices and buttery pao.,440,FALSE,,,TRUE,6
+1407,Chickpea Hummus Salad,All Day Breakfast,Creamy hummus with crisp greens and hearty chickpeas.,270,TRUE,,,TRUE,7
+1408,Greek Salad,All Day Breakfast,"Cucumbers, tomatoes, olives, feta, and olive oil dressing.",300,TRUE,,,TRUE,8
+1409,Veg Caesar Salad,All Day Breakfast,"Romaine lettuce with Caesar dressing, croutons, and parmesan.",300,TRUE,,,TRUE,9
+1410,Veg Pesto Salad,All Day Breakfast,"Mixed greens, roasted vegetables, and tangy pesto dressing.",290,TRUE,,,TRUE,10
+1411,Non Veg Pesto Salad,All Day Breakfast,Grilled chicken over greens with roasted veggies and pesto.,320,FALSE,,,TRUE,11
+1412,Non Veg Caesar Salad,All Day Breakfast,Classic Caesar salad with grilled chicken and parmesan.,360,FALSE,,,TRUE,12
+1413,Corn & Cheese Garlic Bread,All Day Breakfast,"Sweet corn, capsicum, onion with mozzarella cheese.",190,TRUE,,,TRUE,13
+1414,Pesto Paneer Garlic Bread,All Day Breakfast,Pesto marinated paneer with mozzarella cheese.,200,TRUE,,,TRUE,14
+1415,Chipotle Chicken Garlic Bread,All Day Breakfast,Chicken sausages with house chipotle sauce.,250,FALSE,,,TRUE,15
+1416,Extra Pao (Set of 2),All Day Breakfast,Soft buttery pao buns.,30,TRUE,,,TRUE,16
+1501,Churros Bomb,Desserts,Bite-sized churros tossed in cinnamon sugar with chocolate sauce.,295,TRUE,bestseller,,TRUE,1
+1502,Cheesecake With Matcha Ganache,Desserts,Smooth cheesecake with rich matcha & white chocolate ganache.,340,TRUE,,,TRUE,2
+1503,Tiramisu,Desserts,Classic Italian dessert with coffee-soaked ladyfingers and mascarpone.,315,FALSE,staffpick,,TRUE,3
+1504,Waffles,Desserts,"Crisp golden waffles with syrup, whipped cream, and fresh fruit.",290,TRUE,,,TRUE,4
+1505,Churros,Desserts,Golden churros with cinnamon sugar and hazelnut ganache.,290,TRUE,,,TRUE,5
+1506,Pancake,Desserts,Fluffy pancakes served with syrup and butter.,250,TRUE,,,TRUE,6
+1507,Hazelnut Cheese Cake,Desserts,Rich and creamy cheesecake infused with hazelnut flavor.,320,TRUE,,,TRUE,7

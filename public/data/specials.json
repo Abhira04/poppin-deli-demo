@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "menu_item_id": 305,
+        "tag": "Limited",
+        "active": true
+    },
+    {
+        "id": 2,
+        "menu_item_id": 1503,
+        "tag": "Special",
+        "active": true
+    },
+    {
+        "id": 3,
+        "menu_item_id": 1103,
+        "tag": "Weekly Pick",
+        "active": true
+    }
+]
