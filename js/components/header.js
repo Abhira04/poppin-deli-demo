@@ -3,52 +3,52 @@
 // ==========================================================================
 
 export function initHeader() {
-    const header = document.querySelector('.header');
-    if (!header) return;
+  const header = document.querySelector('.header');
+  if (!header) return;
 
-    // Shrink header on scroll
-    let lastScrollY = window.scrollY;
+  // Shrink header on scroll
+  let lastScrollY = window.scrollY;
 
-    const handleScroll = () => {
-        const currentScrollY = window.scrollY;
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
 
-        if (currentScrollY > 50) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
+    if (currentScrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
 
-        lastScrollY = currentScrollY;
-    };
+    lastScrollY = currentScrollY;
+  };
 
-    window.addEventListener('scroll', handleScroll, { passive: true });
+  window.addEventListener('scroll', handleScroll, { passive: true });
 
-    // Set active nav link based on current page
-    setActiveNavLink();
+  // Set active nav link based on current page
+  setActiveNavLink();
 }
 
 function setActiveNavLink() {
-    const currentPath = window.location.pathname;
-    const navLinks = document.querySelectorAll('.header-nav-link');
+  const currentPath = window.location.pathname;
+  const navLinks = document.querySelectorAll('.header-nav-link');
 
-    navLinks.forEach(link => {
-        const href = link.getAttribute('href');
+  navLinks.forEach(link => {
+    const href = link.getAttribute('href');
 
-        // Check if this link matches current page
-        if (href === currentPath ||
-            (href === '/' && currentPath === '/index.html') ||
-            (href === '/index.html' && currentPath === '/') ||
-            currentPath.endsWith(href)) {
-            link.classList.add('active');
-        } else {
-            link.classList.remove('active');
-        }
-    });
+    // Check if this link matches current page
+    if (href === currentPath ||
+      (href === '/' && currentPath === '/index.html') ||
+      (href === '/index.html' && currentPath === '/') ||
+      currentPath.endsWith(href)) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
 }
 
 // Generate header HTML
 export function createHeader(activePage = 'home') {
-    return `
+  return `
     <header class="header">
       <div class="container">
         <div class="header-inner">
@@ -67,7 +67,7 @@ export function createHeader(activePage = 'home') {
           
           <!-- Header CTA -->
           <div class="header-cta">
-            <a href="/order.html" class="btn btn-primary">Order Pickup</a>
+            <a href="/order.html" class="btn btn-primary">Order Takeout</a>
           </div>
         </div>
       </div>

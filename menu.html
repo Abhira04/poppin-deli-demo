@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Poppin Deli Menu - Browse our brunch, coffee, subs, and desserts. Order via WhatsApp for pickup.">
+        content="Poppin Deli Menu - Browse our brunch, coffee, subs, and desserts. Order via WhatsApp for Takeout.">
 
     <meta property="og:title" content="Menu | Poppin Deli">
     <meta property="og:description" content="Brunch, Coffee & Deli Comfort â€” served all day.">
@@ -47,7 +47,7 @@
                         </svg>
                         <span class="cart-badge" id="cartBadge" style="display: none;">0</span>
                     </button>
-                    <a href="./order.html" class="btn btn-primary">Order Pickup</a>
+                    <a href="./order.html" class="btn btn-primary">Order Takeout</a>
                 </div>
             </div>
         </div>
@@ -82,22 +82,13 @@
         <!-- Category Tabs -->
         <div class="category-tabs">
             <div class="container">
-                <div class="category-tabs-inner">
-                    <button class="category-tab active" data-category="food">Food</button>
-                    <button class="category-tab" data-category="pastas">Pastas</button>
-                    <button class="category-tab" data-category="burgers">Burgers</button>
-                    <button class="category-tab" data-category="sandwiches">Sandwiches</button>
-                    <button class="category-tab" data-category="tapas">Tapas & Sliders</button>
-                    <button class="category-tab" data-category="pizza">Pizza</button>
-                    <button class="category-tab" data-category="mexican">Mexican</button>
-                    <button class="category-tab" data-category="indian">Indian</button>
-                    <button class="category-tab" data-category="continental">Continental</button>
-                    <button class="category-tab" data-category="biryani">Biryani</button>
-                    <button class="category-tab" data-category="coffee">Coffee</button>
-                    <button class="category-tab" data-category="coolers">Coolers & Tea</button>
-                    <button class="category-tab" data-category="matcha">Matcha</button>
-                    <button class="category-tab" data-category="breakfast">Breakfast</button>
-                    <button class="category-tab" data-category="desserts">Desserts</button>
+                <div class="category-tabs-inner" id="category-tabs-container">
+                    <!-- Categories will be loaded dynamically -->
+                    <button class="category-tab active" data-category="all">All</button>
+                    <!-- Fallback skeletons -->
+                    <div class="skeleton" style="width: 80px; height: 36px; border-radius: 99px;"></div>
+                    <div class="skeleton" style="width: 100px; height: 36px; border-radius: 99px;"></div>
+                    <div class="skeleton" style="width: 90px; height: 36px; border-radius: 99px;"></div>
                 </div>
             </div>
         </div>
@@ -106,22 +97,22 @@
         <div class="container">
             <div class="filter-chips">
                 <button class="filter-chip" data-filter="bestseller">
-                    <span class="emoji">â­</span> Best Seller
+                    <span class="emoji">⭐</span> Best Seller
                 </button>
                 <button class="filter-chip" data-filter="veg">
-                    <span class="emoji">ðŸ¥¬</span> Veg
+                    <span class="emoji">🥬</span> Veg
                 </button>
                 <button class="filter-chip" data-filter="spicy">
-                    <span class="emoji">ðŸŒ¶ï¸</span> Spicy
+                    <span class="emoji">🌶️</span> Spicy
                 </button>
                 <button class="filter-chip" data-filter="staffpick">
-                    <span class="emoji">ðŸ‘¨â€ðŸ³</span> Staff Pick
+                    <span class="emoji">👨‍🍳</span> Staff Pick
                 </button>
                 <button class="filter-chip" data-filter="eggfree">
-                    <span class="emoji">ðŸ¥š</span> Egg-Free
+                    <span class="emoji">🥚🚫</span> Egg-Free
                 </button>
                 <button class="filter-chip" data-filter="glutenfriendly">
-                    <span class="emoji">ðŸŒ¾</span> Gluten-Friendly
+                    <span class="emoji">🌾🚫</span> Gluten-Friendly
                 </button>
             </div>
         </div>
@@ -137,7 +128,7 @@
                 <!-- Sticky Order Panel (Desktop) -->
                 <aside class="order-panel">
                     <div class="order-panel-card">
-                        <h3 class="order-panel-title">Order Pickup</h3>
+                        <h3 class="order-panel-title">Order Takeout</h3>
                         <a href="https://wa.me/918770769691?text=Hi%20Poppin%20Deli!%20I%27d%20like%20to%20place%20an%20order."
                             target="_blank" class="btn btn-whatsapp order-panel-cta">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
@@ -310,7 +301,7 @@
     <div class="checkout-modal" id="checkoutModal">
         <div class="checkout-modal-content">
             <div class="checkout-modal-header">
-                <h2 id="checkoutTitle">Pickup Details</h2>
+                <h2 id="checkoutTitle">Takeout Details</h2>
                 <button class="checkout-close-btn" id="checkoutCloseBtn" aria-label="Close">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
@@ -348,8 +339,8 @@
                         <input type="tel" id="customerPhone" name="phone" required placeholder="+91 98765 43210">
                     </div>
                     <div class="form-group">
-                        <label for="pickupTime">Pickup Time *</label>
-                        <input type="time" id="pickupTime" name="pickupTime" required>
+                        <label for="TakeoutTime">Takeout Time *</label>
+                        <input type="time" id="TakeoutTime" name="TakeoutTime" required>
                     </div>
                     <div class="form-group">
                         <label for="orderNotes">Notes (optional)</label>

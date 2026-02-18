@@ -47,7 +47,7 @@ export function createCartDrawer() {
     <div class="checkout-modal" id="checkoutModal">
         <div class="checkout-modal-content">
             <div class="checkout-modal-header">
-                <h2>Pickup Details</h2>
+                <h2>Takeout Details</h2>
                 <button class="checkout-close-btn" id="checkoutCloseBtn" aria-label="Close">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -64,8 +64,8 @@ export function createCartDrawer() {
                     <input type="tel" id="customerPhone" name="phone" required placeholder="+91 98765 43210">
                 </div>
                 <div class="form-group">
-                    <label for="pickupTime">Pickup Time *</label>
-                    <input type="time" id="pickupTime" name="pickupTime" required>
+                    <label for="TakeoutTime">Takeout Time *</label>
+                    <input type="time" id="TakeoutTime" name="TakeoutTime" required>
                 </div>
                 <div class="form-group">
                     <label for="orderNotes">Notes (optional)</label>
@@ -203,7 +203,7 @@ function renderCartFooter() {
             </div>
         </div>
         <button class="btn btn-primary btn-lg cart-checkout-btn" id="cartCheckoutBtn">
-            Proceed to Pickup Checkout
+            Proceed to Takeout Checkout
         </button>
         <button class="btn btn-ghost cart-clear-btn" id="cartClearBtn">
             Clear Cart
@@ -292,11 +292,11 @@ function openCheckout() {
         modal.classList.add('open');
         document.body.style.overflow = 'hidden';
 
-        // Set default pickup time (30 mins from now)
+        // Set default Takeout time (30 mins from now)
         const now = new Date();
         now.setMinutes(now.getMinutes() + 30);
         const timeString = now.toTimeString().slice(0, 5);
-        document.getElementById('pickupTime').value = timeString;
+        document.getElementById('TakeoutTime').value = timeString;
     }
 }
 
@@ -348,7 +348,7 @@ export function initCartDrawer() {
         const customerInfo = {
             name: formData.get('name'),
             phone: formData.get('phone'),
-            pickupTime: formData.get('pickupTime'),
+            TakeoutTime: formData.get('TakeoutTime'),
             notes: formData.get('notes')
         };
 

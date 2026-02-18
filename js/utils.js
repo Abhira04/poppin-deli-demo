@@ -23,7 +23,7 @@ export function getWhatsAppLink(message = 'Hi Poppin Deli! 👋') {
  * Generate WhatsApp order link for a specific item
  */
 export function getWhatsAppOrderLink(itemName) {
-    const message = `Hi Poppin Deli! 🍽️\n\nI want to order: ${itemName}\n\nPickup time:\nName:\nPhone:`;
+    const message = `Hi Poppin Deli! 🍽️\n\nI want to order: ${itemName}\n\nTakeout time:\nName:\nPhone:`;
     return getWhatsAppLink(message);
 }
 

@@ -318,16 +318,38 @@ function initSearch() {
 /**
  * Initialize category tabs
  */
-function initCategoryTabs() {
-    const tabs = document.querySelectorAll('.category-tab');
 
+function initCategoryTabs() {
+    const container = document.getElementById('category-tabs-container');
+    if (!container || !menuData) return;
+
+    // Render tabs dynamically
+    let html = '';
+    menuData.categories.forEach((cat, index) => {
+        // First tab is active by default
+        const activeClass = index === 0 ? ' active' : '';
+        html += `<button class="category-tab${activeClass}" data-category="${cat.id}">${cat.name}</button>`;
+    });
+
+    container.innerHTML = html;
+
+    // Attach listeners
+    const tabs = container.querySelectorAll('.category-tab');
     tabs.forEach(tab => {
         tab.addEventListener('click', () => {
             const categoryId = tab.dataset.category;
             const categorySection = document.getElementById(categoryId);
 
             if (categorySection) {
-                categorySection.scrollIntoView({ behavior: 'smooth' });
+                // Offset for header
+                const headerOffset = 80;
+                const elementPosition = categorySection.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth"
+                });
             }
 
             // Update active state
@@ -557,7 +579,7 @@ function renderCartFooter() {
             </div>
         </div>
         <button class="btn btn-primary btn-lg cart-checkout-btn" id="cartCheckoutBtn">
-            Proceed to Pickup Checkout
+            Proceed to Takeout Checkout
         </button>
         <button class="btn btn-ghost cart-clear-btn" id="cartClearBtn">
             Clear Cart
@@ -585,11 +607,11 @@ function openCheckout() {
         modal.classList.add('open');
         document.body.style.overflow = 'hidden';
 
-        // Set default pickup time (30 mins from now)
+        // Set default Takeout time (30 mins from now)
         const now = new Date();
         now.setMinutes(now.getMinutes() + 30);
         const timeString = now.toTimeString().slice(0, 5);
-        document.getElementById('pickupTime').value = timeString;
+        document.getElementById('TakeoutTime').value = timeString;
 
         // Initialize step navigation
         initCheckoutSteps();
@@ -620,7 +642,7 @@ function initCheckoutSteps() {
         // Validate step 1 fields
         const name = document.getElementById('customerName').value.trim();
         const phone = document.getElementById('customerPhone').value.trim();
-        const time = document.getElementById('pickupTime').value;
+        const time = document.getElementById('TakeoutTime').value;
 
         if (!name || !phone || !time) {
             alert('Please fill in all required fields');
@@ -704,7 +726,7 @@ function updateCheckoutStep() {
 
     // Update title
     const titles = {
-        1: 'Pickup Details',
+        1: 'Takeout Details',
         2: 'Make Payment',
         3: 'Confirm Order'
     };
@@ -782,7 +804,7 @@ function renderOrderReview() {
     const items = getCartItems();
     const name = document.getElementById('customerName').value;
     const phone = document.getElementById('customerPhone').value;
-    const time = document.getElementById('pickupTime').value;
+    const time = document.getElementById('TakeoutTime').value;
     const notes = document.getElementById('orderNotes').value;
 
     review.innerHTML = `
@@ -791,7 +813,7 @@ function renderOrderReview() {
             <p>${name} • ${phone}</p>
         </div>
         <div class="order-review-section">
-            <h5>Pickup Time</h5>
+            <h5>Takeout Time</h5>
             <p>${time}</p>
         </div>
         ${notes ? `
@@ -829,7 +851,7 @@ function handleCheckout(e) {
     const customerInfo = {
         name: formData.get('name'),
         phone: formData.get('phone'),
-        pickupTime: formData.get('pickupTime'),
+        TakeoutTime: formData.get('TakeoutTime'),
         notes: formData.get('notes')
     };
 

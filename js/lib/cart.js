@@ -208,7 +208,7 @@ export function getCartBilling() {
 
 /**
  * Generate WhatsApp order message
- * @param {Object} customerInfo - { name, phone, pickupTime, notes }
+ * @param {Object} customerInfo - { name, phone, TakeoutTime, notes }
  * @returns {string} - WhatsApp URL with encoded message
  */
 export function generateWhatsAppOrder(customerInfo) {
@@ -224,7 +224,7 @@ export function generateWhatsAppOrder(customerInfo) {
     }).join('\n');
 
     // Build message
-    const message = `🛒 *New Pickup Order - Poppin Deli*
+    const message = `🛒 *New Takeout Order - Poppin Deli*
 
 *Items:*
 ${itemLines}
@@ -234,10 +234,10 @@ Subtotal: ₹${billing.subtotal}
 GST (${billing.gstPercent}%): ₹${billing.gstAmount}
 *Total: ₹${billing.total}*
 
-*Pickup Details:*
+*Takeout Details:*
 Name: ${customerInfo.name}
 Phone: ${customerInfo.phone}
-Time: ${customerInfo.pickupTime}${customerInfo.notes ? `\nNotes: ${customerInfo.notes}` : ''}
+Time: ${customerInfo.TakeoutTime}${customerInfo.notes ? `\nNotes: ${customerInfo.notes}` : ''}
 
 💳 *Payment:* UPI (Screenshot attach below)
 ⏳ Please confirm once payment is verified!`;
